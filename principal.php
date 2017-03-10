@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,7 +66,7 @@
 				<li><a href="#doctor">Candidatas</a></li>
 				<li><a href="#facilities">Galería</a></li>
 				<li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Juez 1 <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo " ".$_SESSION['usuario'];?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
@@ -88,8 +89,7 @@
         </div>
         <!-- /.container -->
     </nav>
-<?php session_start();
-
+<?php
     if (!isset($_SESSION['valido']))
         $_SESSION['valido']=0;
 
