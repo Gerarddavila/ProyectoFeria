@@ -86,7 +86,7 @@ $_SESSION['valido']=0
 									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Iniciar Sesion</h3>
 									</div>	
 									<div class="panel-body">									   
-    					                <form action="validar.php" method="post" role="form" class="contactForm lead">    									
+    					                <form action="validar2.php" method="post" role="form" class="contactForm lead">    									
     										<div>
 
     										<div class="form-group">

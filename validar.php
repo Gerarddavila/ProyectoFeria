@@ -1,16 +1,4 @@
 <?php
-//$vUsuario = $_POST['usuario'];
-//$vPassword = $_POST['password'];
-  //$string = htmlentities($string, ENT_QUOTES, 'UTF-8');
-//header("Content-Type: text/html; charset=UTF-8");
-
-//define('DB_SERVER', 'localhost');
-//define('DB_NAME', 'mydb');
-//define('DB_USER', 'root');
-//define('DB_PASS', '');
-
-//$con = mysql_connect(DB_SERVER, DB_USER, DB_PASS);
-//mysql_select_db(DB_NAME, $con);
 
 include_once "conexion.php";
 
