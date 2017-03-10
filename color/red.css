@@ -35,10 +35,15 @@ a:focus {
   border-color: #eb4141;
 }
 
+.btn-skinC {
+  background-color: #033844;
+  border-color: #033844;
+}
+
 
 /* top */
 .top-area {
-	background: #e23c3c;
+	background: #033844;
 }
 
 /* menu */
