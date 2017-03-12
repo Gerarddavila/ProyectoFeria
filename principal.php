@@ -22,7 +22,7 @@
     <link href="css/style.css" rel="stylesheet">
 
 
-	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<link id="bodybg" href="bodybg/bg10.css" rel="stylesheet" type="text/css" />
 
 	<link id="t-colors" href="color/red.css" rel="stylesheet">
    
@@ -54,7 +54,10 @@
         <div class="container navigation">
 		
             <div class="navbar-header page-scroll">
-                <a class="navbar-brand" href="principal.html">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="principal.php">
                     <img src="img/logo.png" alt="" width="150" height="40" />
                 </a>
             </div>
@@ -79,7 +82,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="index.html"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesion</a>
+                            <a href="index.php"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesion</a>
                         </li>
                     </ul>
                 </li>
@@ -174,8 +177,10 @@ else
                                 </div>
                             </div>
                         </a>
+
+
                         <a href="index-form.html" class="cbp-l-grid-team-name">Maria del Rosario </a>
-                        <div class="cbp-l-grid-team-position">San Marcos</div>
+                        <div class="cbp-9-grid-team-position">San Marcos</div>
                     </li>
 
                     <li class="cbp-item cardiologist">

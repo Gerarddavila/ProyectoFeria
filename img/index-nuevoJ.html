@@ -50,7 +50,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="principal.html">
                     <img src="img/logo.png" alt="" width="150" height="40" />
                 </a>
             </div>
@@ -58,10 +58,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
-				
-				<li class="active"><a href="index.html">Inicio</a></li>
 
-				
+				<li class="active"><a href="principal.html">Inicio</a></li>
 			  </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -69,101 +67,64 @@
         <!-- /.container -->
     </nav>
 	
-
 	<!-- Section: intro -->
     <section id="intro" class="intro">
 		<div class="intro-content">
 			<div class="container">
 				<div class="row">
+					<div class="col-lg-2">	</div>
+				<div class="col-lg-1">
 
-				<div class="col-lg-2">	</div>
-				<div class="col-lg-4">
-
-
-
-							<div id="grid-container" class="cbp-l-grid-team">
-				                <ul>
-				                    <li class="cbp-item psychiatrist">
-				                       <a  class="cbp-caption">
-				                            <div class="cbp-caption-defaultWrap">
-				                                <img src="img/team/1.jpg" alt="" width="100%">
-				                            </div>
-				                            
-
-				                        </a>
-				                        <a  class="cbp-l-grid-team-name">Maria del Rosario </a>
-				                        <div class="cbp-l-grid-team-position">San Marcos</div>
-				                    </li>
-				                </ul>
-				            </div>
-
-
-					</div>
-					<div class="col-lg-4">
+				</div>
+					<div class="col-lg-6">
 						<div class="form-wrapper">
-
-						<div class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
 						
+						<div class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">						
 							<div class="panel panel-skin">
 							<div class="panel-heading">
-									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Traje de Baño</h3>
+
+									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> NUEVO JURADO</h3>
 									</div>
+									<form action="insertar.php" method="post" name="registrar" class="contactForm lead">									   
 									<div class="panel-body">
-									    <div id="sendmessage">Your message has been sent. Thank you!</div>
-                                        <div id="errormessage"></div>
-                                   
-    					                <form action="" method="post" role="form" class="contactForm lead">
-    										
-    											<div class="col-xs-6 col-sm-6 col-md-6">
-    												<div class="form-group">
-    													<label>Presentacion</label>     												
-	    												<div class="form-group">
-			                                    			<input id="uno" class="form-control" placeholder="Punteo" name="presentacion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
-			                               				 </div>
+    					               	<div>
+    											<a >NOMBRES	</a>
+    											<div class="form-group">
+                                    				<input class="form-control" placeholder="Ingrese Nombre" name="nombre" type="text"  autofocus>
+                               				 	</div>
+    											
+                               				 	<a >Origen	</a>
+    											<div class="form-group">
+                                    				<input class="form-control" placeholder="Originario" name="origen" type="any" required="required" autofocus>
+                               				 	</div>
+                               				 	<a >Edad	</a>
+    											<div class="form-group">
+                                    				<input class="form-control" placeholder="Edad" name="edad" type="number" min="18" max="90" required="required" autofocus>
+                               				 	</div>
+                               				 	<a >USUARIO	</a>
+    											<div class="form-group">
+                                    				<input class="form-control" placeholder="Ingrese Usuario" name="usuario" type="text" autofocus>
+                               				 	</div>
+                               				 	<a >PASSWORD	</a>
+    											<div class="form-group">
+                                    				<input class="form-control" placeholder="Ingrese Password" name="pass" type="Password" autofocus>
+                               				 	</div>
+                               				 	<a> Tipo de Usuario </a>
+    											<div class="form-group">
+    												<input class="form.control" name="rbutton" type="radio" value="1">  Juez <br>
+    												<input class="form.control" name="rbutton" type="radio" value="0">  Fiscal <br>
 
-    												</div>
     											</div>
 
-    											<div class="col-xs-6 col-sm-6 col-md-6">
-    												<div class="form-group">
-    													<label>Desenvolvimiento</label>     												
-		    												<div class="form-group">
-			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="desenvolvimiento" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
-			                               				 	</div>
-    												</div>
-    											</div>
-    										
-    											<div class="col-xs-6 col-sm-6 col-md-6">
-    												<div class="form-group">
-    													<label>Figura</label>     												
-		    												<div class="form-group">
-			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="figura" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
-			                               				 	</div>
-			                               				 	<h3 class="panel-title"><span class="panel-title" id="resultado">Total: </span></h3>
-    												</div>
-    												 
-        											</div>
 
-
-   	    										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg">
-    										 
+    										</div>    									
+    										    	 <button type="submit"  class="btn btn-success"><span class="glyphicon glyphicon-book"></span> Registrate</button>								
     									</form>
-											<a  href="index-form.html" class="btn btn-skin  btn-lg">Regresar</a> 
-											
+    											<a  href="principal.html" class="btn btn-skin  btn-lg">Regresar</a> 
+    											<a  class="btn btn-skin  btn-lg">INGRESAR</a>
 								</div>
-<script language="javascript" > 
-function opera(){ 
-var uno = document.all.uno.value; 
-var dos = document.all.dos.value;
-var tres = document.all.tres.value;	
-//var cuatro = document.all.cuatro.value;
-
-document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat(dos) + parseFloat(tres)) ;  
-
-} 
-
-</script>
-							</div>
+							</div>				
+						
 						</div>
 						</div>
 					</div>					

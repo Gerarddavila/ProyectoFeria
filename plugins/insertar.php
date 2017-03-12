@@ -3,7 +3,7 @@
 	   isset($_post['origen']) 	&& !empty($_post['origen']) &&
 	   isset($_post['edad']) 	&& !empty($_post['edad']) 	&&
 	   isset($_post['usuario']) 	&& !empty($_post['usuario']) &&
-	   isset($_post['pass']) 	&& !empty($_post['pass']) 	&&
+	   isset($_post['contrasenia']) 	&& !empty($_post['contrasenia']) 	&&
 	   isset($_post['rbutton']) && !empty($_post['rbutton']))
 	  	{	
 				
@@ -13,7 +13,7 @@
 					$consulta = mysqli_query("SELECT * FROM usuario WHERE nombreusuario ='".$_post["usuario"] ."'");
 
 
-					if(mysqli_num_rows($consulta)>0)
+					if(mysql_num_rows($consulta)>0)
 						{		
 							echo "el usuario ya existe";
 						}

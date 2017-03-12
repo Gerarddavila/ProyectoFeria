@@ -1,3 +1,17 @@
+<?php session_start(); ?>
+<?php
+    if (!isset($_SESSION['userid']))
+        $_SESSION['userid']=1;
+    if($_SESSION['userid']==0)
+          echo '</br></br></br></br>','<a>Acceso Restringido: </a>';
+       
+        if($_SESSION['userid']==0)
+        echo '<a href="cerrarsesion.php">  Iniciar Sesion</a>';
+       
+ 
+    else
+    {
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,13 +58,14 @@
 				</div>
 			</div>
 		</div>
+        
         <div class="container navigation">
 		
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img src="img/logo.png" alt="" width="150" height="40" />
                 </a>
             </div>
@@ -59,7 +74,7 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
 				
-				<li class="active"><a href="index.html">Inicio</a></li>
+				<li class="active"><a href="index.php">Inicio</a></li>
 
 				
 			  </ul>
@@ -105,7 +120,7 @@
 						
 							<div class="panel panel-skin">
 							<div class="panel-heading">
-									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Puntos a calificar</h3>
+									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span>Coreografía</h3>
 									</div>
 									<div class="panel-body">
 									    <div id="sendmessage">Your message has been sent. Thank you!</div>
@@ -210,6 +225,7 @@ document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat
 				</div>
 			</div>	
 		</div>
+	}
 		<div class="sub-footer">
 		<div class="container">
 			<div class="row">
@@ -260,3 +276,6 @@ document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat
 </body>
 
 </html>
+<?php
+}
+?>
