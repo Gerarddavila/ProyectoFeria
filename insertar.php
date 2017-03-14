@@ -32,7 +32,7 @@
 ?>
 
 						<script >
-							window.location = "index-nuevoJ.html"; 
+							window.location = "index-nuevoJ.php"; 
 						</script>
 <?php
 						}
