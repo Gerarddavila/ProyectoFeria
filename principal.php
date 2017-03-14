@@ -78,7 +78,7 @@
                             <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
+                            <a href="index-nuevoJ.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -164,6 +164,7 @@ else
 		
             <div id="grid-container" class="cbp-l-grid-team">
                 <ul>
+<<<<<<< HEAD
 
 <?php
 $con = mysqli_connect('localhost', 'gdavilam', 'gerardo17', 'comision_belleza2017');
@@ -202,6 +203,41 @@ while($dato = mysqli_fetch_array($record)) {
 
                 </ul>		
             </div>
+=======
+<?php
+$con = mysqli_connect('localhost', 'comision_admin', '$Sanmarcos2017', 'comision_belleza2017');
+
+$query = "select * from candidatas;";
+
+$record = mysqli_query($con,$query);
+
+while($dato = mysqli_fetch_array($record)) {
+    
+    echo"<li class='cbp-item neurologist'>";
+    echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-caption'>";
+    echo"<div class='cbp-caption-defaultWrap'>";
+    echo "<img src='img/team/".$dato["idcandidatas"].".jpg' alt='230' width='230'>";
+    echo"</div>";
+    echo"<div class='cbp-caption-activeWrap'>";
+    echo"<div class='cbp-l-caption-alignCenter'>";
+    echo"<div class='cbp-l-caption-body'>";
+    echo"<div class='cbp-l-caption-text'>CALIFICAR</div>";
+    echo"</div>";
+    echo"</div>";
+    echo"</div>";
+    echo"</a>";
+    echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
+    echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
+    echo"</li>";
+
+}
+?>
+                    
+    </ul>		
+            </div>
+			</div>
+			</div>
+>>>>>>> d48056e1be6ea47bcf2a8b592185455e8ed13a19
 		</div>
 	</div>
 </div>
@@ -247,9 +283,9 @@ while($dato = mysqli_fetch_array($record)) {
 	<!-- /Section: works -->
 	
 	
-	<!-- Section: testimonial -->
-    <section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">
 
+	<!-- Section: testimonial -->
+<!--    <section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">  
 <div class="carousel-reviews broun-block">
     <div class="container">
         <div class="row">
@@ -310,7 +346,7 @@ while($dato = mysqli_fetch_array($record)) {
         </div>
     </div>
 </div>
-	</section>
+	</section>-->
 	<!-- /Section: testimonial -->
 	
 	<footer>

@@ -1,17 +1,3 @@
-<?php session_start(); ?>
-<?php
-    if (!isset($_SESSION['userid']))
-        $_SESSION['userid']=1;
-    if($_SESSION['userid']==0)
-          echo '</br></br></br></br>','<a>Acceso Restringido: </a>';
-       
-        if($_SESSION['userid']==0)
-        echo '<a href="cerrarsesion.php">  Iniciar Sesion</a>';
-       
- 
-    else
-    {
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,7 +44,6 @@
 				</div>
 			</div>
 		</div>
-        
         <div class="container navigation">
 		
             <div class="navbar-header page-scroll">
@@ -90,68 +75,17 @@
 		<div class="intro-content">
 			<div class="container">
 				<div class="row">
-						<div class="col-lg-2">	</div>
+
+				<div class="col-lg-2">	</div>
 				<div class="col-lg-4">
 
 
-<<<<<<< HEAD:index-formentre.php
-<div id="grid-container" class="cbp-l-grid-team">
-=======
 
 							<div id="grid-container" class="cbp-l-grid-team">
->>>>>>> d48056e1be6ea47bcf2a8b592185455e8ed13a19:index-formentre.php
 				                <ul>
 				                    <li class="cbp-item psychiatrist">
-				                       <a class="cbp-caption">
+				                       <a  class="cbp-caption">
 				                            <div class="cbp-caption-defaultWrap">
-<<<<<<< HEAD:index-formentre.php
-				                                
-				                                
-
-				                                <?php 
-				                                $candidata=$_GET['ref'];
-				                               $con = mysqli_connect('localhost', 'gdavilam', 'gerardo17', 'comision_belleza2017');
-
-												$query = "select idcandidatas,nombrec,municipio from candidatas where idcandidatas=".$candidata.";";
-
-												$record = mysqli_query($con,$query);
-
-												//$dato = mysqli_fetch_array($record);
-
-				                                if (!empty($_GET['ref'])) {
-
-												  if ($_GET['ref'] == $candidata)
-												  {
-												  echo "<img src='img/team/".$candidata.".jpg' alt='230' width='230'>";
-												  }
-
-												  }
-												 ?>
-				                            </div>
-				                        </a>
-
-				                        <?php 
-				                        $candidata=$_GET['ref'];
-				                               $con = mysqli_connect('localhost', 'gdavilam', 'gerardo17', 'comision_belleza2017');
-
-												$query = "select idcandidatas,nombrec,municipio from candidatas where idcandidatas=".$candidata.";";
-
-												$record = mysqli_query($con,$query);
-												$dato = mysqli_fetch_array($record);
-												if (!empty($_GET['ref'])) {
-
-												  if ($_GET['ref'] == $candidata)
-												  {
-												   echo"<a  class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
-				                        		   echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
-												  }
-
-												  }
-
-
-				                         ?>
-				                        
-=======
 				                                <img src="img/team/1.jpg" alt="" width="100%">
 				                            </div>
 				                            
@@ -159,7 +93,6 @@
 				                        </a>
 				                        <a  class="cbp-l-grid-team-name">Maria del Rosario </a>
 				                        <div class="cbp-l-grid-team-position">San Marcos</div>
->>>>>>> d48056e1be6ea47bcf2a8b592185455e8ed13a19:index-formentre.php
 				                    </li>
 				                </ul>
 				            </div>
@@ -168,32 +101,33 @@
 					</div>
 					<div class="col-lg-4">
 						<div class="form-wrapper">
-						<div class="form-wrapper">
+
 						<div class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
 						
 							<div class="panel panel-skin">
 							<div class="panel-heading">
-									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Entrevista</h3>
+									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Traje de Baño</h3>
 									</div>
 									<div class="panel-body">
-									    <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
+									   <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> --> 
                                         <div id="errormessage"></div>
                                    
     					                <form action="" method="post" role="form" class="contactForm lead">
     										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Personalidad</label>     												
-		    												<div class="form-group">
-			                                    				<input id="uno" class="form-control" placeholder="Punteo" name="presentacion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
-			                               				 	</div>
+    													<label>Presentacion</label>     												
+	    												<div class="form-group">
+			                                    			<input id="uno" class="form-control" placeholder="Punteo" name="presentacion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                               				 </div>
+
     												</div>
     											</div>
 
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
     													<label>Desenvolvimiento</label>     												
-		    												<div  class="form-group">
+		    												<div class="form-group">
 			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="desenvolvimiento" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
@@ -201,57 +135,35 @@
     										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Aspecto Físico</label>     												
+    													<label>Figura</label>     												
 		    												<div class="form-group">
-			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="gracia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="figura" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
+			                               				 	<h3 class="panel-title"><span class="panel-title" id="resultado">Total: </span></h3>
     												</div>
-    											</div>
+    												 
+        											</div>
 
-    											<div class="col-xs-6 col-sm-6 col-md-6">
-    												<div class="form-group">
-    													<label>Intelecto</label>     												
-		    												<div class="form-group">
-			                                    				<input id="cuatro" class="form-control" placeholder="Punteo" name="simpatia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
-			                               				 	</div>
-			                     							</div>
-	       											</div>
-    										<div class="col-xs-6 col-sm-6 col-md-6">
-    												<div class="form-group">
-    													
-		    												<div class="form-group">
-			                                    				<h3 class="panel-title"><span class="panel-title" id="resultado">Total: </span></h3>
-			                               				 	</div>
-    												</div>
-    											</div>
 
-    										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg" onclick="return confirm('¿Esta seguro que desea guardar la calificación?');">
+   	    										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg" onclick="return confirm('¿Esta seguro que desea guardar la calificación?');">
     										 
     									</form>
-<<<<<<< HEAD:index-formentre.php
-											<?php $candidata=$_GET['ref'];
-											echo "<a  href='index-form.php?ref=".$dato['idcandidatas']."'class='btn btn-skin  btn-lg'>Regresar</a> "; ?>
-=======
 											<a  href="index-form.php" class="btn btn-skin  btn-lg">Regresar</a> 
->>>>>>> d48056e1be6ea47bcf2a8b592185455e8ed13a19:index-formentre.php
 											
 								</div>
-												
-												<script language="javascript" > 
+<script language="javascript" > 
 function opera(){ 
 var uno = document.all.uno.value; 
 var dos = document.all.dos.value;
 var tres = document.all.tres.value;	
-var cuatro = document.all.cuatro.value;
+//var cuatro = document.all.cuatro.value;
 
-document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat(dos) + parseFloat(tres) + parseFloat(cuatro)) ;  
+document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat(dos) + parseFloat(tres)) ;  
 
 } 
 
-</script> 
-
+</script>
 							</div>
-
 						</div>
 						</div>
 					</div>					
@@ -283,7 +195,6 @@ document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat
 				</div>
 			</div>	
 		</div>
-	}
 		<div class="sub-footer">
 		<div class="container">
 			<div class="row">
@@ -334,6 +245,3 @@ document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat
 </body>
 
 </html>
-<?php
-}
-?>

@@ -30,13 +30,13 @@ function verificar_login($usuario, $password, &$result)
       if (verificar_login($_POST['usuario'],$_POST['password'],$result) == 1)
       {
         $_SESSION['userid'] = $result ->idUsuario;
-        header("Location:principal.html");
+        header("Location:principal.php");
 
       }
         else
         {
           echo '<div class = "error"> Su Usuario o Contraseña es incorrecto, Intente Nuevamente... </div>';
-          echo '<a href = "index.html"> Inicio</a>';
+          echo '<a href = "index.php"> Inicio</a>';
         }
     }
   }
