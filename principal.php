@@ -216,7 +216,7 @@ while($dato = mysqli_fetch_array($record)) {
     echo"<li class='cbp-item neurologist'>";
     echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-caption'>";
     echo"<div class='cbp-caption-defaultWrap'>";
-    echo "<img src='img/team/".$dato["idcandidatas"].".jpg' alt='230' width='230'>";
+    echo "<img src='img/team/".$dato["idcandidatas"].".jpg' alt='230' width='255'>";
     echo"</div>";
     echo"<div class='cbp-caption-activeWrap'>";
     echo"<div class='cbp-l-caption-alignCenter'>";
