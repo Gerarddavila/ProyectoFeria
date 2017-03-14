@@ -172,11 +172,16 @@ else
 									<div class="panel-body">									   
     					                <form action="" method="post" role="form" class="contactForm lead">    									
     										<div>
-    											<a  href="index-formentre.php" class="btn btn-skin btn-block btn-lg">Entrevista	</a>
-    											<a  href="index-formCor.php" class="btn btn-skin btn-block btn-lg">Coreografia</a>
-    											<a  href="index-formBaño.php" class="btn btn-skin btn-block btn-lg">Traje de Baño</a>
-    											<a  href="index-formPGala.php" class="btn btn-skin btn-block btn-lg">Traje de Gala</a>
+    										<?php 
+    										$candidata=$_GET['ref'];
+    											echo"<a  href='index-formentre.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Entrevista	</a>";
 
+    											echo"<a  href='index-formCor.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Coreografia</a>";
+
+    											echo"<a  href='index-formBaño.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje de Baño</a>";
+
+    											echo"<a  href='index-formPGala.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje de Gala</a>";
+    											 ?>
 
     										</div>    									
     										    									
