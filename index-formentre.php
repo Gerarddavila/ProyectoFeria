@@ -94,7 +94,13 @@
 				<div class="col-lg-4">
 
 
-
+<div id="grid-container" class="cbp-l-grid-team">
+				                <ul>
+				                    <li class="cbp-item psychiatrist">
+				                       <a class="cbp-caption">
+				                            <div class="cbp-caption-defaultWrap">
+				                                
+				                                
 				                                
 
 				                                <?php 
