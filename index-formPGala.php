@@ -1,3 +1,4 @@
+ <?php session_start(); ?>
  <!DOCTYPE html>
 <html lang="en">
 
@@ -69,6 +70,28 @@
         <!-- /.container -->
     </nav>
 	
+<?php
+    if (!isset($_SESSION['valido']))
+        $_SESSION['valido']=0;
+
+    if($_SESSION['valido']==0){
+    echo"   <section id='intro' class='intro'>";
+    echo"        <div class='intro-content'>";
+                echo "<div class='container'>";
+                echo"<div align='center'>    " ;       
+                echo"<img class='img-responsive' src='img/restringido.jpg' alt='restringido'>";
+                echo"<a class='btn btn-warning' href='index.php'>Inicio</a>";
+                echo"</div>                ";
+                echo"</div>      ";
+            echo"</div>";
+        echo"</div>     "; 
+    echo"</section>";
+
+
+    }
+else
+    {
+?>	
 
 	<!-- Section: intro -->
     <section id="intro" class="intro">
