@@ -94,12 +94,64 @@
 				<div class="col-lg-4">
 
 
+<<<<<<< HEAD:index-formentre.php
+<div id="grid-container" class="cbp-l-grid-team">
+=======
 
 							<div id="grid-container" class="cbp-l-grid-team">
+>>>>>>> d48056e1be6ea47bcf2a8b592185455e8ed13a19:index-formentre.php
 				                <ul>
 				                    <li class="cbp-item psychiatrist">
 				                       <a class="cbp-caption">
 				                            <div class="cbp-caption-defaultWrap">
+<<<<<<< HEAD:index-formentre.php
+				                                
+				                                
+
+				                                <?php 
+				                                $candidata=$_GET['ref'];
+				                               $con = mysqli_connect('localhost', 'gdavilam', 'gerardo17', 'comision_belleza2017');
+
+												$query = "select idcandidatas,nombrec,municipio from candidatas where idcandidatas=".$candidata.";";
+
+												$record = mysqli_query($con,$query);
+
+												//$dato = mysqli_fetch_array($record);
+
+				                                if (!empty($_GET['ref'])) {
+
+												  if ($_GET['ref'] == $candidata)
+												  {
+												  echo "<img src='img/team/".$candidata.".jpg' alt='230' width='230'>";
+												  }
+
+												  }
+												 ?>
+				                            </div>
+				                        </a>
+
+				                        <?php 
+				                        $candidata=$_GET['ref'];
+				                               $con = mysqli_connect('localhost', 'gdavilam', 'gerardo17', 'comision_belleza2017');
+
+												$query = "select idcandidatas,nombrec,municipio from candidatas where idcandidatas=".$candidata.";";
+
+												$record = mysqli_query($con,$query);
+												$dato = mysqli_fetch_array($record);
+												if (!empty($_GET['ref'])) {
+
+												  if ($_GET['ref'] == $candidata)
+												  {
+												   echo"<a  class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
+				                        		   echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
+												  }
+
+												  }
+
+
+				                         ?>
+				                        
+=======
 				                                <img src="img/team/1.jpg" alt="" width="100%">
 				                            </div>
 				                            
@@ -107,6 +159,7 @@
 				                        </a>
 				                        <a  class="cbp-l-grid-team-name">Maria del Rosario </a>
 				                        <div class="cbp-l-grid-team-position">San Marcos</div>
+>>>>>>> d48056e1be6ea47bcf2a8b592185455e8ed13a19:index-formentre.php
 				                    </li>
 				                </ul>
 				            </div>
@@ -175,7 +228,12 @@
     										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg" onclick="return confirm('¿Esta seguro que desea guardar la calificación?');">
     										 
     									</form>
+<<<<<<< HEAD:index-formentre.php
+											<?php $candidata=$_GET['ref'];
+											echo "<a  href='index-form.php?ref=".$dato['idcandidatas']."'class='btn btn-skin  btn-lg'>Regresar</a> "; ?>
+=======
 											<a  href="index-form.php" class="btn btn-skin  btn-lg">Regresar</a> 
+>>>>>>> d48056e1be6ea47bcf2a8b592185455e8ed13a19:index-formentre.php
 											
 								</div>
 												

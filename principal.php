@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php //session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,7 +93,7 @@
         <!-- /.container -->
     </nav>
 <?php
-    if (!isset($_SESSION['valido']))
+    /*if (!isset($_SESSION['valido']))
         $_SESSION['valido']=0;
 
     if($_SESSION['valido']==0){
@@ -112,7 +112,7 @@
 
     }
 else
-    {
+    {*/
 ?>
 	<!-- Section: intro -->
     <section id="intro" class="intro">
@@ -164,6 +164,46 @@ else
 		
             <div id="grid-container" class="cbp-l-grid-team">
                 <ul>
+<<<<<<< HEAD
+
+<?php
+$con = mysqli_connect('localhost', 'gdavilam', 'gerardo17', 'comision_belleza2017');
+
+$query = "select * from candidatas;";
+
+$record = mysqli_query($con,$query);
+
+while($dato = mysqli_fetch_array($record)) {
+    
+    echo"<li class='cbp-item neurologist'>";
+    echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-caption'>";
+    echo"<div class='cbp-caption-defaultWrap'>";
+    echo "<img src='img/team/".$dato["idcandidatas"].".jpg' alt='230' width='230'>";
+    echo"</div>";
+    echo"<div class='cbp-caption-activeWrap'>";
+    echo"<div class='cbp-l-caption-alignCenter'>";
+    echo"<div class='cbp-l-caption-body'>";
+    echo"<div class='cbp-l-caption-text'>CALIFICAR</div>";
+    echo"</div>";
+    echo"</div>";
+    echo"</div>";
+    echo"</a>";
+    echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
+    echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
+    echo"</li>";
+
+}
+    /*
+    echo"<div class='cbp-caption-defaultWrap'>";
+    echo "<img src='img/team/".$dato["idcandidatas"].".jpg' alt='' width='100%'>";
+    echo"</div>";
+    */
+
+?>
+
+                </ul>		
+            </div>
+=======
 <?php
 $con = mysqli_connect('localhost', 'comision_admin', '$Sanmarcos2017', 'comision_belleza2017');
 
@@ -197,7 +237,10 @@ while($dato = mysqli_fetch_array($record)) {
             </div>
 			</div>
 			</div>
+>>>>>>> d48056e1be6ea47bcf2a8b592185455e8ed13a19
 		</div>
+	</div>
+</div>
 
 	</section>
 	<!-- /Section: team -->
@@ -357,7 +400,7 @@ while($dato = mysqli_fetch_array($record)) {
     <script src="js/custom.js"></script>
     
 <?php
-}
+/*}*/
 ?>
 </body>
 
