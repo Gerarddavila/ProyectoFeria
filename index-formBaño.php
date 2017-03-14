@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -50,7 +50,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img src="img/logo.png" alt="" width="150" height="40" />
                 </a>
             </div>
@@ -59,7 +59,7 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
 				
-				<li class="active"><a href="index.html">Inicio</a></li>
+				<li class="active"><a href="principal.php">Inicio</a></li>
 
 				
 			  </ul>
@@ -75,7 +75,8 @@
 		<div class="intro-content">
 			<div class="container">
 				<div class="row">
-						<div class="col-lg-2">	</div>
+
+				<div class="col-lg-2">	</div>
 				<div class="col-lg-4">
 
 
@@ -83,7 +84,7 @@
 							<div id="grid-container" class="cbp-l-grid-team">
 				                <ul>
 				                    <li class="cbp-item psychiatrist">
-				                       <a class="cbp-caption">
+				                       <a  class="cbp-caption">
 				                            <div class="cbp-caption-defaultWrap">
 				                                <img src="img/team/1.jpg" alt="" width="100%">
 				                            </div>
@@ -105,10 +106,10 @@
 						
 							<div class="panel panel-skin">
 							<div class="panel-heading">
-									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Puntos a calificar</h3>
+									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Traje de Baño</h3>
 									</div>
 									<div class="panel-body">
-									    <div id="sendmessage">Your message has been sent. Thank you!</div>
+									   <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> --> 
                                         <div id="errormessage"></div>
                                    
     					                <form action="" method="post" role="form" class="contactForm lead">
@@ -116,34 +117,39 @@
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
     													<label>Presentacion</label>     												
-		    												<div class="form-group">
-			                                    				<input id="uno" class="form-control" placeholder="Punteo" name="presentacion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
-			                               				 	</div>
+	    												<div class="form-group">
+			                                    			<input id="uno" class="form-control" placeholder="Punteo" name="presentacion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                               				 </div>
+
     												</div>
     											</div>
 
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Elegancia</label>     												
+    													<label>Desenvolvimiento</label>     												
 		    												<div class="form-group">
-			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="elegancia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="desenvolvimiento" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
-    											</div>    	
+    											</div>
+    										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Belleza</label>     												
+    													<label>Figura</label>     												
 		    												<div class="form-group">
-			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="Belleza" type="number" step="0.1" min="0.0" max="7.0"  required="required" onchange="opera()" autofocus>
+			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="figura" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
 			                               				 	<h3 class="panel-title"><span class="panel-title" id="resultado">Total: </span></h3>
     												</div>
-    											</div>    										
-    										
-    										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg">
+    												 
+        											</div>
+
+
+   	    										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg" onclick="return confirm('¿Esta seguro que desea guardar la calificación?');">
     										 
     									</form>
-											<a  href="index-form.html" class="btn btn-skin  btn-lg">Regresar</a> 
+											<a  href="index-form.php" class="btn btn-skin  btn-lg">Regresar</a> 
+											
 								</div>
 <script language="javascript" > 
 function opera(){ 

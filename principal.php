@@ -22,7 +22,7 @@
     <link href="css/style.css" rel="stylesheet">
 
 
-	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<link id="bodybg" href="bodybg/bg10.css" rel="stylesheet" type="text/css" />
 
 	<link id="t-colors" href="color/red.css" rel="stylesheet">
    
@@ -54,7 +54,10 @@
         <div class="container navigation">
 		
             <div class="navbar-header page-scroll">
-                <a class="navbar-brand" href="principal.html">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="principal.php">
                     <img src="img/logo.png" alt="" width="150" height="40" />
                 </a>
             </div>
@@ -75,11 +78,11 @@
                             <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
+                            <a href="index-nuevoJ.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="index.html"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesion</a>
+                            <a href="index.php"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesion</a>
                         </li>
                     </ul>
                 </li>
@@ -161,167 +164,37 @@ else
 		
             <div id="grid-container" class="cbp-l-grid-team">
                 <ul>
-                    <li class="cbp-item psychiatrist">
-                       <a href="index-form.html" class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="img/team/1.jpg" alt="" width="100%">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-text">CALIFICAR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Maria del Rosario </a>
-                        <div class="cbp-l-grid-team-position">San Marcos</div>
-                    </li>
+<?php
+$con = mysqli_connect('localhost', 'comision_admin', '$Sanmarcos2017', 'comision_belleza2017');
 
-                    <li class="cbp-item cardiologist">
-                        <a href="index-form.html" class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="img/team/sanpedro.jpg" alt="" width="100%">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-text">CALIFICAR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Daniela Massiel </a>
-                        <div class="cbp-l-grid-team-position">San Pedro</div>
-                    </li>
+$query = "select * from candidatas;";
 
-                    <li class="cbp-item cardiologist">
-                        <a href="index-form.html" class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="img/team/sanmiguel.jpg" alt="" width="100%">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-text">CALIFICAR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Luz Abigail </a>
-                        <div class="cbp-l-grid-team-position">San Miguel</div>
-                    </li>
-                    <li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="img/team/ocos.jpg" alt="" width="100%">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-text">CALIFICAR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name"> Cinithia Janet</a>
-                        <div class="cbp-l-grid-team-position">Ocos </div>
-                    </li>
+$record = mysqli_query($con,$query);
 
-				<li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="img/team/pajapita.jpg" alt="" width="100%">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-text">CALIFICAR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Astrid Adriana</a>
-                        <div class="cbp-l-grid-team-position">pajapita </div>
-                    </li>
+while($dato = mysqli_fetch_array($record)) {
+    
+    echo"<li class='cbp-item neurologist'>";
+    echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-caption'>";
+    echo"<div class='cbp-caption-defaultWrap'>";
+    echo "<img src='img/team/".$dato["idcandidatas"].".jpg' alt='230' width='255'>";
+    echo"</div>";
+    echo"<div class='cbp-caption-activeWrap'>";
+    echo"<div class='cbp-l-caption-alignCenter'>";
+    echo"<div class='cbp-l-caption-body'>";
+    echo"<div class='cbp-l-caption-text'>CALIFICAR</div>";
+    echo"</div>";
+    echo"</div>";
+    echo"</div>";
+    echo"</a>";
+    echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
+    echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
+    echo"</li>";
 
-			
-					<li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="img/team/malacatan.jpg" alt="" width="100%">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-text">CALIFICAR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name"> Estefany Mariela</a>
-                        <div class="cbp-l-grid-team-position">Malacatan</div>
-                    </li>
-                    <li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="img/team/comitancillo.jpg" alt="" width="100%">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-text">CALIFICAR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Yesli Anabela</a>
-                        <div class="cbp-l-grid-team-position">Comitancillo </div>
-                    </li>
-                    <li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="img/team/catarina.jpg" alt="" width="100%">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-text">CALIFICAR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Yamileth Angelita</a>
-                        <div class="cbp-l-grid-team-position">Catarina </div>
-                    </li>
-                
-                <li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="img/team/Ayutla.jpg" alt="" width="100%">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-text">CALIFICAR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Beverly Yamileth</a>
-                        <div class="cbp-l-grid-team-position">Ayutla </div>
-                    </li>
+}
+?>
                     
-==================================================
-                </ul>
-
-				
-					
+    </ul>		
             </div>
-
-
-
-
 			</div>
 			</div>
 		</div>
@@ -367,9 +240,9 @@ else
 	<!-- /Section: works -->
 	
 	
-	<!-- Section: testimonial -->
-    <section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">
 
+	<!-- Section: testimonial -->
+<!--    <section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">  
 <div class="carousel-reviews broun-block">
     <div class="container">
         <div class="row">
@@ -430,7 +303,7 @@ else
         </div>
     </div>
 </div>
-	</section>
+	</section>-->
 	<!-- /Section: testimonial -->
 	
 	<footer>

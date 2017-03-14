@@ -1,5 +1,6 @@
+<?php session_start();?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -50,7 +51,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="principal.html">
+                <a class="navbar-brand" href="principal.php">
                     <img src="img/logo.png" alt="" width="150" height="40" />
                 </a>
             </div>
@@ -59,13 +60,37 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
 
-				<li class="active"><a href="principal.html">Inicio</a></li>
+				<li class="active"><a href="principal.php">Inicio</a></li>
 			  </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+	
+	<?php
+    if (!isset($_SESSION['valido']))
+        $_SESSION['valido']=0;
+
+    if($_SESSION['valido']==0){
+    echo"   <section id='intro' class='intro'>";
+    echo"        <div class='intro-content'>";
+                echo "<div class='container'>";
+                echo"<div align='center'>    " ;       
+                echo"<img class='img-responsive' src='img/restringido.jpg' alt='restringido'>";
+                echo"<a class='btn btn-warning' href='index.php'>Inicio</a>";
+                echo"</div>                ";
+                echo"</div>      ";
+            echo"</div>";
+        echo"</div>     "; 
+    echo"</section>";
+
+
+    }
+else
+    {
+?>
+	
 	
 	<!-- Section: intro -->
     <section id="intro" class="intro">
@@ -77,21 +102,61 @@
 
 
 
-							<div id="grid-container" class="cbp-l-grid-team">
+					<div id="grid-container" class="cbp-l-grid-team">
 				                <ul>
 				                    <li class="cbp-item psychiatrist">
 				                       <a class="cbp-caption">
 				                            <div class="cbp-caption-defaultWrap">
-				                                <img src="img/team/1.jpg" alt="" width="100%">
-				                            </div>
-				                            
+				                                
+				                                
 
+				                                <?php 
+				                                $candidata=$_GET['ref'];
+				                               $con = mysqli_connect('localhost', 'comision_admin', '$Sanmarcos2017', 'comision_belleza2017');
+
+												$query = "select idcandidatas,nombrec,municipio from candidatas where idcandidatas=".$candidata.";";
+
+												$record = mysqli_query($con,$query);
+
+												//$dato = mysqli_fetch_array($record);
+
+				                                if (!empty($_GET['ref'])) {
+
+												  if ($_GET['ref'] == $candidata)
+												  {
+												  echo "<img src='img/team/".$candidata.".jpg' alt='230' width='370'>";
+												  }
+
+												  }
+												 ?>
+				                            </div>
 				                        </a>
-				                        <a  class="cbp-l-grid-team-name">Maria del Rosario </a>
-				                        <div class="cbp-l-grid-team-position">San Marcos</div>
+
+				                        <?php 
+				                        $candidata=$_GET['ref'];
+				                               $con = mysqli_connect('localhost', 'comision_admin', '$Sanmarcos2017', 'comision_belleza2017');
+
+												$query = "select idcandidatas,nombrec,municipio from candidatas where idcandidatas=".$candidata.";";
+
+												$record = mysqli_query($con,$query);
+												$dato = mysqli_fetch_array($record);
+												if (!empty($_GET['ref'])) {
+
+												  if ($_GET['ref'] == $candidata)
+												  {
+												   echo"<a  class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
+				                        		   echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
+												  }
+
+												  }
+
+
+				                         ?>
+				                        
 				                    </li>
 				                </ul>
 				            </div>
+
 
 
 					</div>
@@ -107,16 +172,21 @@
 									<div class="panel-body">									   
     					                <form action="" method="post" role="form" class="contactForm lead">    									
     										<div>
-    											<a  href="index-formEntrevista.html" class="btn btn-skin btn-block btn-lg">Entrevista	</a>
-    											<a  href="index-formCor.html" class="btn btn-skin btn-block btn-lg">Coreografia</a>
-    											<a  href="index-formBaño.html" class="btn btn-skin btn-block btn-lg">Traje de Baño</a>
-    											<a  href="index-formPGala.html" class="btn btn-skin btn-block btn-lg">Traje de Gala</a>
+    										<?php 
+    										$candidata=$_GET['ref'];
+    											echo"<a  href='index-formentre.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Entrevista	</a>";
 
+    											echo"<a  href='index-formCor.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Coreografia</a>";
+
+    											echo"<a  href='index-formBaño.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje de Baño</a>";
+
+    											echo"<a  href='index-formPGala.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje de Gala</a>";
+    											 ?>
 
     										</div>    									
     										    									
     									</form>
-    											<a  href="principal.html" class="btn btn-skin  btn-lg">Regresar</a> 
+    											<a  href="principal.php" class="btn btn-skin  btn-lg">Regresar</a> 
 								</div>
 							</div>				
 						
@@ -198,6 +268,9 @@
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
     
+    <?php
+}
+?>
 </body>
 
 </html>
