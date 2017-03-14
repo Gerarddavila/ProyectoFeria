@@ -78,7 +78,7 @@
                             <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
+                            <a href="index-nuevoJ.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -165,7 +165,7 @@ else
             <div id="grid-container" class="cbp-l-grid-team">
                 <ul>
                     <li class="cbp-item psychiatrist">
-                       <a href="index-form.html" class="cbp-caption">
+                       <a href="index-form.php" class="cbp-caption">
                             <div class="cbp-caption-defaultWrap">
                                 <img src="img/team/1.jpg" alt="" width="100%">
                             </div>
@@ -179,12 +179,12 @@ else
                         </a>
 
 
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Maria del Rosario </a>
-                        <div class="cbp-9-grid-team-position">San Marcos</div>
+                        <a href="index-form.php" class="cbp-l-grid-team-name">Maria del Rosario </a>
+                        <div class="cbp-l-grid-team-position">San Marcos</div>
                     </li>
 
                     <li class="cbp-item cardiologist">
-                        <a href="index-form.html" class="cbp-caption">
+                        <a href="index-form.php" class="cbp-caption">
                             <div class="cbp-caption-defaultWrap">
                                 <img src="img/team/sanpedro.jpg" alt="" width="100%">
                             </div>
@@ -196,12 +196,12 @@ else
                                 </div>
                             </div>
                         </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Daniela Massiel </a>
+                        <a href="index-form.php" class="cbp-l-grid-team-name">Daniela Massiel </a>
                         <div class="cbp-l-grid-team-position">San Pedro</div>
                     </li>
 
                     <li class="cbp-item cardiologist">
-                        <a href="index-form.html" class="cbp-caption">
+                        <a href="index-form.php" class="cbp-caption">
                             <div class="cbp-caption-defaultWrap">
                                 <img src="img/team/sanmiguel.jpg" alt="" width="100%">
                             </div>
@@ -213,11 +213,11 @@ else
                                 </div>
                             </div>
                         </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Luz Abigail </a>
+                        <a href="index-form.php" class="cbp-l-grid-team-name">Luz Abigail </a>
                         <div class="cbp-l-grid-team-position">San Miguel</div>
                     </li>
                     <li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
+                        <a href="index-form.php" class="cbp-caption">
                             <div class="cbp-caption-defaultWrap">
                                 <img src="img/team/ocos.jpg" alt="" width="100%">
                             </div>
@@ -229,12 +229,12 @@ else
                                 </div>
                             </div>
                         </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name"> Cinithia Janet</a>
+                        <a href="index-form.php" class="cbp-l-grid-team-name"> Cinithia Janet</a>
                         <div class="cbp-l-grid-team-position">Ocos </div>
                     </li>
 
 				<li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
+                        <a href="index-form.php" class="cbp-caption">
                             <div class="cbp-caption-defaultWrap">
                                 <img src="img/team/pajapita.jpg" alt="" width="100%">
                             </div>
@@ -246,13 +246,13 @@ else
                                 </div>
                             </div>
                         </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Astrid Adriana</a>
+                        <a href="index-form.php" class="cbp-l-grid-team-name">Astrid Adriana</a>
                         <div class="cbp-l-grid-team-position">pajapita </div>
                     </li>
 
 			
 					<li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
+                        <a href="index-form.php" class="cbp-caption">
                             <div class="cbp-caption-defaultWrap">
                                 <img src="img/team/malacatan.jpg" alt="" width="100%">
                             </div>
@@ -264,11 +264,11 @@ else
                                 </div>
                             </div>
                         </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name"> Estefany Mariela</a>
+                        <a href="index-form.php" class="cbp-l-grid-team-name"> Estefany Mariela</a>
                         <div class="cbp-l-grid-team-position">Malacatan</div>
                     </li>
                     <li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
+                        <a href="index-form.php" class="cbp-caption">
                             <div class="cbp-caption-defaultWrap">
                                 <img src="img/team/comitancillo.jpg" alt="" width="100%">
                             </div>
@@ -280,11 +280,11 @@ else
                                 </div>
                             </div>
                         </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Yesli Anabela</a>
+                        <a href="index-form.php" class="cbp-l-grid-team-name">Yesli Anabela</a>
                         <div class="cbp-l-grid-team-position">Comitancillo </div>
                     </li>
                     <li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
+                        <a href="index-form.php" class="cbp-caption">
                             <div class="cbp-caption-defaultWrap">
                                 <img src="img/team/catarina.jpg" alt="" width="100%">
                             </div>
@@ -296,12 +296,12 @@ else
                                 </div>
                             </div>
                         </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Yamileth Angelita</a>
+                        <a href="index-form.php" class="cbp-l-grid-team-name">Yamileth Angelita</a>
                         <div class="cbp-l-grid-team-position">Catarina </div>
                     </li>
                 
                 <li class="cbp-item neurologist">
-                        <a href="index-form.html" class="cbp-caption">
+                        <a href="index-form.php" class="cbp-caption">
                             <div class="cbp-caption-defaultWrap">
                                 <img src="img/team/Ayutla.jpg" alt="" width="100%">
                             </div>
@@ -313,11 +313,11 @@ else
                                 </div>
                             </div>
                         </a>
-                        <a href="index-form.html" class="cbp-l-grid-team-name">Beverly Yamileth</a>
+                        <a href="index-form.php" class="cbp-l-grid-team-name">Beverly Yamileth</a>
                         <div class="cbp-l-grid-team-position">Ayutla </div>
                     </li>
                     
-==================================================
+
                 </ul>
 
 				
@@ -372,9 +372,9 @@ else
 	<!-- /Section: works -->
 	
 	
-	<!-- Section: testimonial -->
-    <section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">
 
+	<!-- Section: testimonial -->
+<!--    <section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">  
 <div class="carousel-reviews broun-block">
     <div class="container">
         <div class="row">
@@ -435,7 +435,7 @@ else
         </div>
     </div>
 </div>
-	</section>
+	</section>-->
 	<!-- /Section: testimonial -->
 	
 	<footer>

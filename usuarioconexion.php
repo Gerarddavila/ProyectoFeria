@@ -17,7 +17,7 @@ if($row = mysqli_fetch_array($result))
   echo "USUARIO VALIDO";
 $_SESSION['valido']=1;
 $_SESSION['usuario']=$vUsuario;
-  header("Location: principal.html");  
+  header("Location: principal.php");  
  }
  else
  {
