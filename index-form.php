@@ -1,5 +1,6 @@
+<?php session_start();?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -67,6 +68,30 @@
         <!-- /.container -->
     </nav>
 	
+	<?php
+    if (!isset($_SESSION['valido']))
+        $_SESSION['valido']=0;
+
+    if($_SESSION['valido']==0){
+    echo"   <section id='intro' class='intro'>";
+    echo"        <div class='intro-content'>";
+                echo "<div class='container'>";
+                echo"<div align='center'>    " ;       
+                echo"<img class='img-responsive' src='img/restringido.jpg' alt='restringido'>";
+                echo"<a class='btn btn-warning' href='index.php'>Inicio</a>";
+                echo"</div>                ";
+                echo"</div>      ";
+            echo"</div>";
+        echo"</div>     "; 
+    echo"</section>";
+
+
+    }
+else
+    {
+?>
+	
+	
 	<!-- Section: intro -->
     <section id="intro" class="intro">
 		<div class="intro-content">
@@ -77,21 +102,61 @@
 
 
 
-							<div id="grid-container" class="cbp-l-grid-team">
+					<div id="grid-container" class="cbp-l-grid-team">
 				                <ul>
 				                    <li class="cbp-item psychiatrist">
 				                       <a class="cbp-caption">
 				                            <div class="cbp-caption-defaultWrap">
-				                                <img src="img/team/1.jpg" alt="" width="100%">
-				                            </div>
-				                            
+				                                
+				                                
 
+				                                <?php 
+				                                $candidata=$_GET['ref'];
+				                               $con = mysqli_connect('localhost', 'comision_admin', '$Sanmarcos2017', 'comision_belleza2017');
+
+												$query = "select idcandidatas,nombrec,municipio from candidatas where idcandidatas=".$candidata.";";
+
+												$record = mysqli_query($con,$query);
+
+												//$dato = mysqli_fetch_array($record);
+
+				                                if (!empty($_GET['ref'])) {
+
+												  if ($_GET['ref'] == $candidata)
+												  {
+												  echo "<img src='img/team/".$candidata.".jpg' alt='230' width='230'>";
+												  }
+
+												  }
+												 ?>
+				                            </div>
 				                        </a>
-				                        <a  class="cbp-l-grid-team-name">Maria del Rosario </a>
-				                        <div class="cbp-l-grid-team-position">San Marcos</div>
+
+				                        <?php 
+				                        $candidata=$_GET['ref'];
+				                               $con = mysqli_connect('localhost', 'comision_admin', '$Sanmarcos2017', 'comision_belleza2017');
+
+												$query = "select idcandidatas,nombrec,municipio from candidatas where idcandidatas=".$candidata.";";
+
+												$record = mysqli_query($con,$query);
+												$dato = mysqli_fetch_array($record);
+												if (!empty($_GET['ref'])) {
+
+												  if ($_GET['ref'] == $candidata)
+												  {
+												   echo"<a  class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
+				                        		   echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
+												  }
+
+												  }
+
+
+				                         ?>
+				                        
 				                    </li>
 				                </ul>
 				            </div>
+
 
 
 					</div>
@@ -198,6 +263,9 @@
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
     
+    <?php
+}
+?>
 </body>
 
 </html>
