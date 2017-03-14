@@ -24,15 +24,15 @@ $_SESSION['usuario']=$vUsuario;
  }
  else
  {
-echo "Contraseña incorrecta"  ;   
-echo "USUARIO INVALIDO";
+echo "Contraseña incorrecta "  ;   
+echo "";
 		$_SESSION['valido']=0;
  }
 }
 else
 {
- echo "Usuario Incorrecto";
- echo "USUARIO INVALIDO";
+ echo "Usuario Incorrecto ";
+ echo "";
 		$_SESSION['valido']=0;
          
 }

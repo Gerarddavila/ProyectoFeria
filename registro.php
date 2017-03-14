@@ -7,8 +7,8 @@ $vUsuario=$_POST['usuario'];
 $vPassword=$_POST['password'];
 $vTipo=$_POST['rbutton'];
 
- $con = mysqli_connect('localhost','comision_admin','$Sanmarcos2017','comision_bellezadepartamental');
-mysqli_query($con,$query=" INSERT INTO `comision_bellezadepartamental`.`usuario`
+ $con = mysqli_connect('localhost','comision_admin','$Sanmarcos2017','comision_belleza2017');
+mysqli_query($con,$query=" INSERT INTO `comision_belleza2017`.`usuario`
 (`nombrec`,
 `direccion`,
 `edad`,
@@ -28,7 +28,7 @@ header('location:principal.html');*/
 
 ?>
 
-<script language="javascript">window.location="principal.html";</script>
+<script language="javascript">window.location="principal.php";</script>
 
 	
 

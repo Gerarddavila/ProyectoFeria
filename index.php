@@ -112,7 +112,7 @@ $_SESSION['valido']=0
     										</div>    									
     										    									
     									</form>
-    											<a  href="index.html" class="btn btn-skin  btn-lg">Cancelar</a> 
+    											<a  href="index.php" class="btn btn-skin  btn-lg">Cancelar</a> 
 								</div>
 							</div>				
 						
