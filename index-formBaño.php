@@ -106,7 +106,7 @@
 						
 							<div class="panel panel-skin">
 							<div class="panel-heading">
-									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Traje de Baño</h3>
+									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Traje Típico</h3>
 									</div>
 									<div class="panel-body">
 									   <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> --> 
@@ -116,9 +116,9 @@
     										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Presentacion</label>     												
+    													<label>Pasarela</label>     												
 	    												<div class="form-group">
-			                                    			<input id="uno" class="form-control" placeholder="Punteo" name="presentacion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    			<input id="uno" class="form-control" placeholder="Punteo" name="pasarela" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 </div>
 
     												</div>
@@ -126,29 +126,41 @@
 
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Desenvolvimiento</label>     												
+    													<label>Gracia</label>     												
 		    												<div class="form-group">
-			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="desenvolvimiento" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="gracia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
     											</div>
     										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Figura</label>     												
+    													<label>Simpatía</label>     												
 		    												<div class="form-group">
-			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="figura" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="simpatia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
-			                               				 	<h3 class="panel-title"><span class="panel-title" id="resultado">Total: </span></h3>
+			                               				</div>
     												</div>
-    												 
-        											</div>
 
-
+        										<div class="col-xs-6 col-sm-6 col-md-6">
+    												<div class="form-group">
+    													<label>Desenvolvimiento</label>     												
+		    												<div class="form-group">
+			                                    				<input id="cuatro" class="form-control" placeholder="Punteo" name="desenvolvimiento" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                               				 	</div>
+			                               				 </div>
+        											</div><div class="col-xs-6 col-sm-6 col-md-6">
+    												<div class="form-group">
+    													
+		    												<div class="form-group">
+			                                    				<h3 class="panel-title"><span class="panel-title" id="resultado">Total: </span></h3>
+			                               				 	</div>
+    												</div>
+    											</div>
    	    										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg" onclick="return confirm('¿Esta seguro que desea guardar la calificación?');">
     										 
     									</form>
-											<a  href="index-form.php" class="btn btn-skin  btn-lg">Regresar</a> 
+											<a  href="index-form.php" class="btn btn-skinC  btn-lg">Regresar</a> 
 											
 								</div>
 <script language="javascript" > 
@@ -156,9 +168,9 @@ function opera(){
 var uno = document.all.uno.value; 
 var dos = document.all.dos.value;
 var tres = document.all.tres.value;	
-//var cuatro = document.all.cuatro.value;
+var cuatro = document.all.cuatro.value;
 
-document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat(dos) + parseFloat(tres)) ;  
+document.all.resultado.innerText = "Total: " + (parseFloat(uno) + parseFloat(dos) + parseFloat(tres) + parseFloat(cuatro)) ;  
 
 } 
 
