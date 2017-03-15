@@ -115,35 +115,50 @@
     										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Presentacion</label>     												
+    													<label>Pasarela</label>     												
 		    												<div class="form-group">
-			                                    				<input id="uno" class="form-control" placeholder="Punteo" name="presentacion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="uno" class="form-control" placeholder="Punteo" name="pasarela" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
     											</div>
 
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Elegancia</label>     												
+    													<label>Postura</label>     												
 		    												<div class="form-group">
-			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="elegancia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="postura" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
     											</div>    	
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Belleza</label>     												
+    													<label>Elegancia</label>     												
 		    												<div class="form-group">
-			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="Belleza" type="number" step="0.1" min="0.0" max="7.0"  required="required" onchange="opera()" autofocus>
+			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="elegancia" type="number" step="0.1" min="0.0" max="7.0"  required="required" onchange="opera()" autofocus>
 			                               				 	</div>
-			                               				 	<h3 class="panel-title"><span class="panel-title" id="resultado">Total: </span></h3>
-    												</div>
+			                        					</div>
     											</div>    										
-    										
+    										    	<div class="col-xs-6 col-sm-6 col-md-6">
+    												<div class="form-group">
+    													<label>Gracia</label>     												
+		    												<div class="form-group">
+			                                    				<input id="cuatro" class="form-control" placeholder="Punteo" name="gracia" type="number" step="0.1" min="0.0" max="7.0"  required="required" onchange="opera()" autofocus>
+			                               				 	</div>
+    												</div>
+			                              </div>    	
+			                              	<div class="col-xs-6 col-sm-6 col-md-6">
+    												<div class="form-group">
+    													
+		    												<div class="form-group">
+			                                    				<h3 class="panel-title"><span class="panel-title" id="resultado">Total: </span></h3>
+			                               				 	</div>
+    												</div>
+    											</div>
+
     										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg" onclick="return confirm('¿Esta seguro que desea guardar la calificación?');">
     										 
     									</form>
-											<a  href="index-form.php" class="btn btn-skin  btn-lg">Regresar</a> 
+											<a  href="index-form.php" class="btn btn-skinC  btn-lg">Regresar</a> 
 								</div>
 <script language="javascript" > 
 function opera(){ 

@@ -140,36 +140,36 @@ else
     										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Presentacion</label>     												
+    													<label>Dominio</label>     												
 		    												<div class="form-group">
-			                                    				<input id="uno" class="form-control" placeholder="Punteo" name="presentacion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="uno" class="form-control" placeholder="Punteo" name="dominio" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
     											</div>
 
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Desenvolvimiento</label>     												
+    													<label>Talento</label>     												
 		    												<div  class="form-group">
-			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="desenvolvimiento" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="talento" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
     											</div>
     										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Gracia</label>     												
+    													<label>Proyeccion </label>     												
 		    												<div class="form-group">
-			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="gracia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="proyeccion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
     											</div>
 
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Simpatia</label>     												
+    													<label>Gracia</label>     												
 		    												<div class="form-group">
-			                                    				<input id="cuatro" class="form-control" placeholder="Punteo" name="simpatia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="cuatro" class="form-control" placeholder="Punteo" name="gracia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
 			                     							</div>
 	       											</div>
@@ -185,7 +185,7 @@ else
     										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg" onclick="return confirm('¿Esta seguro que desea guardar la calificación?');">
     										 
     									</form>
-											<a  href="index-form.php" class="btn btn-skin  btn-lg">Regresar</a> 
+											<a  href="index-form.php" class="btn btn-skinC  btn-lg">Regresar</a> 
 											
 								</div>
 												

@@ -117,7 +117,7 @@
 
 												  if ($_GET['ref'] == $candidata)
 												  {
-												  echo "<img src='img/team/".$candidata.".jpg' alt='230' width='230'>";
+												  echo "<img src='img/team/".$candidata.".jpg' alt='230' width='360'>";
 												  }
 
 												  }
@@ -158,7 +158,7 @@
 						
 							<div class="panel panel-skin">
 							<div class="panel-heading">
-									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Entrevista</h3>
+									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Mensaje</h3>
 									</div>
 									<div class="panel-body">
 									    <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
@@ -168,40 +168,23 @@
     										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Personalidad</label>     												
+    													<label>Expresión Oral</label>     												
 		    												<div class="form-group">
-			                                    				<input id="uno" class="form-control" placeholder="Punteo" name="presentacion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="uno" class="form-control" placeholder="Punteo" name="expresion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
     											</div>
 
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Desenvolvimiento</label>     												
+    													<label>Diccion</label>     												
 		    												<div  class="form-group">
-			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="desenvolvimiento" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
+			                                    				<input id="dos" class="form-control" placeholder="Punteo" name="diccion" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
 			                               				 	</div>
     												</div>
     											</div>
     										
-    											<div class="col-xs-6 col-sm-6 col-md-6">
-    												<div class="form-group">
-    													<label>Aspecto Físico</label>     												
-		    												<div class="form-group">
-			                                    				<input id="tres" class="form-control" placeholder="Punteo" name="gracia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
-			                               				 	</div>
-    												</div>
-    											</div>
-
-    											<div class="col-xs-6 col-sm-6 col-md-6">
-    												<div class="form-group">
-    													<label>Intelecto</label>     												
-		    												<div class="form-group">
-			                                    				<input id="cuatro" class="form-control" placeholder="Punteo" name="simpatia" type="number" step="0.1" min="0.0" max="7.0" required="required" onchange="opera()" autofocus>
-			                               				 	</div>
-			                     							</div>
-	       											</div>
-    										<div class="col-xs-6 col-sm-6 col-md-6">
+    											    										<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
     													
 		    												<div class="form-group">
@@ -214,7 +197,7 @@
     										 
     									</form>
 												<?php $candidata=$_GET['ref'];
-											echo "<a  href='index-form.php?ref=".$dato['idcandidatas']."'class='btn btn-skin  btn-lg'>Regresar</a> "; ?>
+											echo "<a  href='index-form.php?ref=".$dato['idcandidatas']."'class='btn btn-skinC  btn-lg'>Regresar</a> "; ?>
 											
 								</div>
 												
@@ -222,10 +205,8 @@
 function opera(){ 
 var uno = document.all.uno.value; 
 var dos = document.all.dos.value;
-var tres = document.all.tres.value;	
-var cuatro = document.all.cuatro.value;
 
-document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat(dos) + parseFloat(tres) + parseFloat(cuatro)) ;  
+document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat(dos)) ;  
 
 } 
 
