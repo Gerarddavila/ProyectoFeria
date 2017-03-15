@@ -174,19 +174,22 @@ else
     										<div>
     										<?php 
     										$candidata=$_GET['ref'];
-    											echo"<a  href='index-formentre.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Entrevista	</a>";
 
-    											echo"<a  href='index-formCor.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Coreografia</a>";
+    											echo"<a  href='tipico.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje Típico</a>";
+    											
+    											echo"<a  href='coreografia.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Coreografia</a>";
+    											
+    											echo"<a  href='gala.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje de Gala</a>";
 
-    											echo"<a  href='index-formBaño.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje de Baño</a>";
+    											echo"<a  href='mensaje.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Mensaje	</a>";
 
-    											echo"<a  href='index-formPGala.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje de Gala</a>";
+
     											 ?>
 
     										</div>    									
     										    									
     									</form>
-    											<a  href="principal.php" class="btn btn-skin  btn-lg">Regresar</a> 
+    											<a  href="principal.php" class="btn btn-skinC  btn-lg">Regresar</a> 
 								</div>
 							</div>				
 						
