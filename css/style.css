@@ -97,7 +97,7 @@ h6 {
     margin: 0 0 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-	color: #444;
+	color: #F30B0B;
 	line-height: 1em;
 }
 
@@ -1056,18 +1056,18 @@ Elements
 
 .cbp-l-grid-team-name {
     /* @editable properties */
-    font: 700 17px "Open Sans", sans-serif;
-    color: #456297;
+    font: 700 25px "Open Sans", sans-serif;
+    color: #000;
     text-decoration: none;
     display: block;
     text-align: center;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .cbp-l-grid-team-position {
     /* @editable properties */
-    font: italic 400 16px "Open Sans", sans-serif;
-    color: #888888;
+    font: italic 400 22px "Open Sans", sans-serif;
+    color: #000;
     text-align: center;
 	font-style: normal;
 }

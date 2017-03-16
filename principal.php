@@ -39,7 +39,7 @@ $user=$_GET['i'];?>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-md-6">
-					<p class="bold text-left">Señorita San Marcos 2017 </p>
+					<p font color"White" class="bold text-left">Señorita San Marcos 2017 </p>
 					</div>
 					<div class="col-sm-6 col-md-6">
 					<p class="bold text-right">9no. Semestre - UMG</p>
@@ -124,8 +124,8 @@ else
 				<div class="row">
 					<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
 						<div class="section-heading text-center">
-					<h2 class="h-ultra">Botoncito de Oro</h2>
-					<h6 class="h-light"> <i>Eleccion 2017</i></h6>
+					<h2 font color"White" class="h-ultra">Botoncito de Oro </h2>
+					<h4 class="h-light"> <i>Eleccion 2017</i></h4>
 					<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
 					</div>
 					</div>
@@ -137,7 +137,7 @@ else
 					<p></p>
 					<div class="col-lg-4">
 						<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-						<div align= "absbottom center"><img src="img/dummy/img-1.png" class="img-responsive" alt="" />
+						<div align= "absbottom right"><img src="img/dummy/img-1.png" class="img-responsive" alt="" />
 						</div>
 					</div>					
 				</div>		
