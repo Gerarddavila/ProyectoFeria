@@ -1,12 +1,12 @@
 <?php session_start();?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="9no. Semestre UMG">
 
     <title>UMG</title>
 	
@@ -38,7 +38,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-md-6">
-					<p class="bold text-left">Señorita San Marcos 2017 </p>
+					<p font color"White" class="bold text-left">Señorita San Marcos 2017 </p>
 					</div>
 					<div class="col-sm-6 col-md-6">
 					<p class="bold text-right">9no. Semestre - UMG</p>
@@ -69,7 +69,9 @@
 				<li><a href="#doctor">Candidatas</a></li>
 				<li><a href="#facilities">Galería</a></li>
 				<li class="dropdown">
+                    
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo " ".$_SESSION['usuario'];?> <b class="caret"></b></a>
+                    
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
@@ -77,10 +79,10 @@
                         <li>
                             <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a>
                         </li>
-                        <li>
-                            <a href="index-nuevoJ.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
-                        </li>
-                        <li class="divider"></li>
+		                <li>;
+                        <a href="nuevojurado.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
+                       </li> 
+                    	<li class="divider"></li>
                         <li>
                             <a href="index.php"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesion</a>
                         </li>
@@ -119,23 +121,27 @@ else
 		<div class="intro-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
 					<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
-					<h2 class="h-ultra">Señorita San Marcos 2017</h2>
-					</div>
+						<div class="section-heading text-center">
+					<h2 font color"White" class="h-ultra">Botoncito de Oro </h2>
+					<h4 class="h-light"> <i>Eleccion 2017</i></h4>
 					<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
-					<h4 class="h-light">Candidatas</h4>
 					</div>
-					
+					</div>
+					<div class="col-lg-4">
+					<div class="col-lg-4">
 
 					</div>
-					<div class="col-lg-6">
+					</div>
+					<p></p>
+					<div class="col-lg-4">
 						<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-						<img src="img/dummy/img-1.png" class="img-responsive" alt="" />
+						<div align= "absbottom right"><img src="img/dummy/img-1.png" class="img-responsive" alt="" />
 						</div>
 					</div>					
 				</div>		
 			</div>
+		</div>
 		</div>		
     </section>
 	
@@ -176,7 +182,7 @@ while($dato = mysqli_fetch_array($record)) {
     echo"<li class='cbp-item neurologist'>";
     echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-caption'>";
     echo"<div class='cbp-caption-defaultWrap'>";
-    echo "<img src='img/team/".$dato["idcandidatas"].".jpg' alt='230' width='255'>";
+    echo "<img src='img/team/".$dato["idcandidatas"].".jpg' class='img-responsive' alt='img'>";
     echo"</div>";
     echo"<div class='cbp-caption-activeWrap'>";
     echo"<div class='cbp-l-caption-alignCenter'>";
@@ -356,9 +362,9 @@ while($dato = mysqli_fetch_array($record)) {
 	<script src="js/nivo-lightbox.min.js"></script>
     <script src="js/custom.js"></script>
     
-<?php
-}
-?>
 </body>
 
 </html>
+<?php
+}
+?>
