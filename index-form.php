@@ -193,7 +193,7 @@ else
     									</form>
                 							<?php 
                                             $user=$_GET['id'];
-											echo "<a  href='index-form.php?id=".$user."'class='btn btn-skinC  btn-lg'>Regresar</a> "; ?>
+											echo "<a  href='principal.php?id=".$user."'class='btn btn-skinC  btn-lg'>Regresar</a> "; ?>
 								</div>
 							</div>				
 						

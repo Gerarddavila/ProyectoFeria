@@ -1,5 +1,5 @@
 <?php session_start();
-$user=$_GET['i'];?>
+$user=$_GET['id'];?>
 <!DOCTYPE html>
 <html lang="es">
 
