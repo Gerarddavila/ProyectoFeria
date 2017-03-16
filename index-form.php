@@ -145,7 +145,7 @@ else
 												  if ($_GET['ref'] == $candidata)
 												  {
 												   echo"<a  class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
-				                        		   echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
+				                        		   echo"<div  class='cbp-l-grid-team-position ' >".$dato['municipio']."</div>";
 												  }
 
 												  }
@@ -170,6 +170,7 @@ else
 									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Aspectos a Calificar</h3>
 									</div>
 									<div class="panel-body">									   
+
     					                <form action="" method="post" role="form" class="contactForm lead">    									
     										<div>
     										<?php 
