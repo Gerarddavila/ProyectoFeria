@@ -1,5 +1,6 @@
+<?php session_start();?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -66,6 +67,28 @@
         </div>
         <!-- /.container -->
     </nav>
+		<?php
+    if (!isset($_SESSION['valido']))
+        $_SESSION['valido']=0;
+
+    if($_SESSION['valido']==0){
+    echo"   <section id='intro' class='intro'>";
+    echo"        <div class='intro-content'>";
+                echo "<div class='container'>";
+                echo"<div align='center'>    " ;       
+                echo"<img class='img-responsive' src='img/restringido.jpg' alt='restringido'>";
+                echo"<a class='btn btn-warning' href='index.php'>Inicio</a>";
+                echo"</div>                ";
+                echo"</div>      ";
+            echo"</div>";
+        echo"</div>     "; 
+    echo"</section>";
+
+
+    }
+else
+    {
+?>
 	
 	<!-- Section: intro -->
     <section id="intro" class="intro">
@@ -119,7 +142,7 @@
     										</div>    									
     										    	 <button type="submit"  class="btn btn-success"><span class="glyphicon glyphicon-book"></span> Registrate</button>								
     									</form>
-    											<a href="principal.html" class="btn btn-skin  btn-lg">Regresar</a> 
+    											<a href="principal.html" class="btn btn-skinC  btn-lg">Regresar</a> 
     											<!--  <a  class="btn btn-skin  btn-lg">INGRESAR</a>-->
 								</div>
 							</div>				
@@ -205,3 +228,6 @@
 </body>
 
 </html>
+<?php
+}
+?>

@@ -3,7 +3,7 @@ session_start();
 $_SESSION['valido']=0
  ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -103,7 +103,7 @@ $_SESSION['valido']=0
 
     											     <div class="form-group">
 										            <div >
-										              <button name="login"type="submit" value="login" class="btn btn-skinC btn-block btn-lg">Ingresar</button>
+										              <button name="login"type="submit" value="login" class="btn btn-skin btn-block btn-lg">Ingresar</button>
 										            </div>
 										     </div>
     											
@@ -112,7 +112,7 @@ $_SESSION['valido']=0
     										</div>    									
     										    									
     									</form>
-    											<a  href="index.html" class="btn btn-skin  btn-lg">Cancelar</a> 
+    											<a  href="index.php" class="btn btn-skinC  btn-lg">Cancelar</a> 
 								</div>
 							</div>				
 						

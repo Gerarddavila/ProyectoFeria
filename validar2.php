@@ -17,22 +17,22 @@ if($row = mysql_fetch_array($result))
 {     
  if($row["contrasenia"] == $vPassword)
  {
-header('Location: principal.php');  
+$vid=$row['idusuario'];
+header('Location: principal.php?id='.$vid.'');  
 $_SESSION['valido']=1;
-$_SESSION['usuario']=$vUsuario;
- 
+$_SESSION['usuario']=$vUsuario; 
  }
  else
  {
-echo "Contraseña incorrecta"  ;   
-echo "USUARIO INVALIDO";
+echo "Contraseña incorrecta "  ;   
+echo "";
 		$_SESSION['valido']=0;
  }
 }
 else
 {
- echo "Usuario Incorrecto";
- echo "USUARIO INVALIDO";
+ echo "Usuario Incorrecto ";
+ echo "";
 		$_SESSION['valido']=0;
          
 }

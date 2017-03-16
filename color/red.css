@@ -1,43 +1,43 @@
 /*
-#1 color = #eb4141;
+#1 color = #074247;
 #2 color = #e23c3c;
 */
 
 a:hover,
 a:focus {
-    color: #eb4141;
+    color: #074247;
 }
 
 .circled {
-	background: #eb4141;
+	background: #074247;
 }
 
 .con1 > div, .con2 > div, .con3 > div { 
-	background-color: #eb4141;
+	background-color: #074247;
 }
 
 .scrollup:hover {
-	background: #eb4141;
+	background: #074247;
 }
 
 
 /* service */
 
 .service-icon span {
-	color: #eb4141;
+	color: #074247;
 }
 
 
 
 /* button */
 .btn-skin {
-  background-color: #eb4141;
-  border-color: #eb4141;
+  background-color: #074247;
+  border-color: #074247;
 }
 
 .btn-skinC {
-  background-color: #033844;
-  border-color: #033844;
+  background-color: #E63C3C;
+  border-color: #E73030;
 }
 
 
@@ -60,19 +60,19 @@ a:focus {
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-    background-color: #eb4141;
+    background-color: #074247;
 }
 
 
 .bg-skin {
-	background: #eb4141;
+	background: #074247;
 }
 
 .highlight-color {
-	background-color: #eb4141;
+	background-color: #074247;
 }
 .color {
-	color: #eb4141;
+	color: #074247;
 }
 
 /* pricing box  */
@@ -80,24 +80,24 @@ a:focus {
 	background-color:#e23c3c;
 }
 .pricing-content.featured h3 {
-	background:#eb4141;
+	background:#074247;
 }
 
 
 
 /* team */
 .cbp-l-grid-team-name {
-    color: #e23c3c;
+    color: #FFE1E1;
 }
 
 .cbp-l-filters-button .cbp-filter-counter {
-	background-color: #eb4141;
+	background-color: #074247;
 }
 
 .cbp-l-filters-alignLeft .cbp-filter-item-active {
     /* @editable properties */
-    background-color: #eb4141;
-    border:1px solid #eb4141;
+    background-color: #074247;
+    border:1px solid #074247;
 }
 
 .cbp-l-filters-dropdownWrap {
@@ -105,17 +105,17 @@ a:focus {
     width: 200px;
     position: absolute;
     right: 0;
-    background: #eb4141;
+    background: #074247;
 }
 .cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
     /* @editable properties */
-    background-color: #eb4141;
-    border-color: #eb4141;
+    background-color: #074247;
+    border-color: #074247;
 }
 .cbp-l-caption-buttonLeft,
 .cbp-l-caption-buttonRight {
     /* @editable properties */
-    background-color: #eb4141;
+    background-color: #074247;
 }
 
 .cbp-l-caption-buttonLeft:hover,

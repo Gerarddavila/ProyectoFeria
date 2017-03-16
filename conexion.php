@@ -1,7 +1,7 @@
 <?php 
 
 define('DB_SERVER', 'localhost');
-define('DB_NAME', 'comision_bellezadepartamental');
+define('DB_NAME', 'comision_belleza2017');
 define('DB_USER', 'comision_admin');
 define('DB_PASS', '$Sanmarcos2017');
 

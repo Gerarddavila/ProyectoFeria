@@ -97,7 +97,7 @@ h6 {
     margin: 0 0 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-	color: #444;
+	color: #F30B0B;
 	line-height: 1em;
 }
 
@@ -423,7 +423,7 @@ Navigation
 /* form */
 
 .validation {
-    color: red;
+    color: blue;
     display:none;
     margin: 0 0 20px;
     font-weight:400;
@@ -760,7 +760,7 @@ hr.bold {
 }
 
 .intro-content {
-	background: url(../img/dummy/bg1.jpg) no-repeat top center;
+	background: url(../img/dummy/fondom.jpg) no-repeat top center;
 	padding:200px 0 60px;
 }
 .intro-content.intro-nobg {
@@ -965,8 +965,8 @@ Elements
 }
 
 
-.badge.custom-badge.red {
-	background-color: #e9372e;
+.badge.custom-badge.blue {
+	background-color: #053e54;
 }
 
 /* box */
@@ -1041,8 +1041,8 @@ Elements
 .cbp .cbp-item {
     z-index: 2;
     display: block;
-    width: 240px; /* default width for blocks */
-    height: 250px; /* default height for blocks */
+    width: 230px; /* default width for blocks */
+    height: 240px; /* default height for blocks */
 }
 
 .cbp-filter-item {
@@ -1056,18 +1056,18 @@ Elements
 
 .cbp-l-grid-team-name {
     /* @editable properties */
-    font: 700 17px "Open Sans", sans-serif;
-    color: #456297;
+    font: 700 25px "Open Sans", sans-serif;
+    color: #000;
     text-decoration: none;
     display: block;
     text-align: center;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .cbp-l-grid-team-position {
     /* @editable properties */
-    font: italic 400 16px "Open Sans", sans-serif;
-    color: #888888;
+    font: italic 400 22px "Open Sans", sans-serif;
+    color: #000;
     text-align: center;
 	font-style: normal;
 }
@@ -1660,20 +1660,20 @@ a.btn:focus{
 	outline: 0;
 }
 
-.btn-red {
+.btn-blue {
   color: #fff;
-  background-color: #c83539;
-  border-color: #c83539;
+  background-color: #053e54;
+  border-color: #066490;
 }
-.btn-red:hover,
-.btn-red:focus,
-.btn-red:active,
-.btn-red.active {
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active {
   color: #fff;
   background-color: #666;
   border-color: #666;
 }
-.btn-red:active {
+.btn-blue:active {
   background-image: none;
 }
 
