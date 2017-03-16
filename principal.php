@@ -1,4 +1,5 @@
-<?php session_start();?>
+<?php session_start();
+$user=$_GET['i'];?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -180,7 +181,7 @@ $record = mysqli_query($con,$query);
 while($dato = mysqli_fetch_array($record)) {
     
     echo"<li class='cbp-item neurologist'>";
-    echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-caption'>";
+    echo"<a href='index-form.php?id=".$user."&ref=".$dato['idcandidatas']."'class='cbp-caption'>";
     echo"<div class='cbp-caption-defaultWrap'>";
     echo "<img src='img/team/".$dato["idcandidatas"].".jpg' class='img-responsive' alt='img'>";
     echo"</div>";
@@ -192,7 +193,7 @@ while($dato = mysqli_fetch_array($record)) {
     echo"</div>";
     echo"</div>";
     echo"</a>";
-    echo"<a href='index-form.php?ref=".$dato['idcandidatas']."'class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
+    echo"<a href='index-form.php?id=".$user."&ref=".$dato['idcandidatas']."'class='cbp-l-grid-team-name'>".$dato['nombrec']."</a>";
     echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
     echo"</li>";
 

@@ -17,10 +17,10 @@ if($row = mysql_fetch_array($result))
 {     
  if($row["contrasenia"] == $vPassword)
  {
-header('Location: principal.php');  
+$vid=$row['idusuario'];
+header('Location: principal.php?i='.$vid.'');  
 $_SESSION['valido']=1;
-$_SESSION['usuario']=$vUsuario;
- 
+$_SESSION['usuario']=$vUsuario; 
  }
  else
  {
