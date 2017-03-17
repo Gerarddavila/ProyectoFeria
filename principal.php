@@ -80,7 +80,7 @@ $user=$_GET['id'];?>
                         <li>
                           <!-- <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a> --> 
                         </li>
-		                <li>;
+		                <li>
                         <a href="nuevojurado.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
                        </li> 
                     	<li class="divider"></li>
