@@ -222,7 +222,7 @@ while($dato = mysqli_fetch_array($record)) {
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
 					<div class="section-heading text-center">
 					<h2 class="h-bold">Galería</h2>
-					<p>Aquí encontrara un álbum de fotografías de las candidatas</p>
+					<p>Aquí encontrará un álbum de fotografías de las candidatas</p>
 					</div>
 					</div>
 					<div class="divider-short"></div>
