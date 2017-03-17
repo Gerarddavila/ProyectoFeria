@@ -137,7 +137,7 @@ else
 					</div>
 					</div>
 					<p></p>
-					<div class="col-lg-4">
+					<div class="col-lg-6.5">
 						<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div align= "absbottom right"><img src="img/dummy/img-1.png" class="img-responsive" alt="" />
 						</div>
