@@ -58,7 +58,7 @@ $user=$_GET['id'];?>
                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="principal.php">
+                <a class="navbar-brand" href="https://www.umg.edu.gt/">
                     <img src="img/logo.png" alt="" width="150" height="40" />
                 </a>
             </div>
@@ -322,7 +322,7 @@ while($dato = mysqli_fetch_array($record)) {
 					<div class="widget">
 						<h5>Siguenos</h5>
 						<ul class="company-social">
-							<li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>	
+							<li class="social-facebook"><a href="https://web.facebook.com/reinadeparatmental.sanmarcos?ref=br_rs"><i class="fa fa-facebook"></i></a></li>	
 						</ul>
 					</div>
 				
