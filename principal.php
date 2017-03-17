@@ -126,7 +126,7 @@ else
 						<div class="section-heading text-center">
 					<h2 font color"White" class="h-ultra">Elección Niña Primavera y Niña Botoncito de Primavera 2017</h2>
 
-					<h4 class="h-light"> <i>Eleccion 2017</i></h4>
+					<h4 class="h-light"> <i>Elección 2017</i></h4>
 					<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
 					</div>
 					</div>
