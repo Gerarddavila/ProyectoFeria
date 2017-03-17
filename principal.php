@@ -75,10 +75,10 @@ $user=$_GET['id'];?>
                     
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                            <!-- <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a> -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a>
+                          <!-- <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a> --> 
                         </li>
 		                <li>;
                         <a href="nuevojurado.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
