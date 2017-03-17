@@ -170,7 +170,7 @@ else
 					<div class="widget">
 						<h5>Siguenos</h5>
 						<ul class="company-social">
-								<li class="social-facebook"><a href="https://web.facebook.com/reinadeparatmental.sanmarcos?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
+								<li class="social-facebook"><a target="_blank" href="https://web.facebook.com/reinadeparatmental.sanmarcos?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
 	
 						</ul>
 					</div>
