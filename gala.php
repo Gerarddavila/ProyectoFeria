@@ -125,7 +125,7 @@ else
 
 												  if ($_GET['ref'] == $candidata)
 												  {
-												  echo "<img src='img/team/".$candidata.".jpg' alt='230' width='360'>";
+												  echo "<img src='img/team/".$candidata.".JPG' alt='230' width='360'>";
 												  }
 
 												  }
