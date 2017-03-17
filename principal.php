@@ -58,7 +58,7 @@ $user=$_GET['id'];?>
                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="principal.php">
+                <a class="navbar-brand" target="_blank" href="https://www.umg.edu.gt/">
                     <img src="img/logo.png" alt="" width="150" height="40" />
                 </a>
             </div>
@@ -75,12 +75,12 @@ $user=$_GET['id'];?>
                     
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                            <!-- <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a> -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a>
+                          <!-- <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a> --> 
                         </li>
-		                <li>;
+		                <li>
                         <a href="nuevojurado.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a>
                        </li> 
                     	<li class="divider"></li>
@@ -124,8 +124,10 @@ else
 				<div class="row">
 					<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
 						<div class="section-heading text-center">
+					<!-- <h2 font color"White" class="h-ultra">Elección Niña Primavera y Niña Botoncito de Primavera 2017</h2>
+					<h4 class="h-light"> <i>Elección 2017</i></h4> -->
 					<h2 font color"White" class="h-ultra">Niña Primavera y Botoncito de Primavera 2017 </h2>
-					<h4 class="h-light"> <i>Eleccion 2017</i></h4>
+					<h4 class="h-light"> <i>Elección 2017</i></h4>
 					<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
 					</div>
 					</div>
@@ -135,7 +137,7 @@ else
 					</div>
 					</div>
 					<p></p>
-					<div class="col-lg-4">
+					<div class="col-lg-6.5">
 						<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div align= "absbottom right"><img src="img/dummy/img-1.png" class="img-responsive" alt="" />
 						</div>
@@ -220,7 +222,7 @@ while($dato = mysqli_fetch_array($record)) {
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
 					<div class="section-heading text-center">
 					<h2 class="h-bold">Galería</h2>
-					<p>Aquí encontrara un álbum de fotografías de las candidatas</p>
+					<p>Aquí encontrará un álbum de fotografías de las candidatas</p>
 					</div>
 					</div>
 					<div class="divider-short"></div>
@@ -342,7 +344,7 @@ while($dato = mysqli_fetch_array($record)) {
 					<div class="widget">
 						<h5>Siguenos</h5>
 						<ul class="company-social">
-							<li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>	
+							<li class="social-facebook"><a target="_blank" href="https://web.facebook.com/reinadeparatmental.sanmarcos?ref=br_rs"><i class="fa fa-facebook"></i></a></li>	
 						</ul>
 					</div>
 				
@@ -360,7 +362,15 @@ while($dato = mysqli_fetch_array($record)) {
 				<div class="col-sm-6 col-md-6 col-lg-6">
 					<div class="wow fadeInRight" data-wow-delay="0.1s">
 					<div class="text-right">
-						
+						<div class="credits">
+                            <!-- 
+                                All the links in the footer should remain intact. 
+                                You can delete the links only if you purchased the pro version.
+                                Licensing information: https://bootstrapmade.com/license/
+                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
+                            -->
+                            <a >Feria de Primavera</a> 
+                        </div>
 					</div>
 					</div>
 				</div>
