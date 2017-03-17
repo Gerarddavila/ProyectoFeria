@@ -198,7 +198,7 @@ else
                                 Licensing information: https://bootstrapmade.com/license/
                                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
                             -->
-                            <a href="#">Feria de Primavera</a> 
+                            <a >Feria de Primavera</a> 
                         </div>
 					</div>
 					</div>

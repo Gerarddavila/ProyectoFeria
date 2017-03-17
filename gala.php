@@ -287,7 +287,7 @@ document.all.resultado.innerText = "				Total: " + (parseFloat(uno) + parseFloat
                                 Licensing information: https://bootstrapmade.com/license/
                                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
                             -->
-                            <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Pasar a otra pagina</a> 
+                            <a >Fiesta de Primavera</a> 
                         </div>
 					</div>
 					</div>
