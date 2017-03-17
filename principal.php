@@ -126,8 +126,8 @@ else
 						<div class="section-heading text-right">
 					<!-- <h2 font color"White" class="h-ultra">Elección Niña Primavera y Niña Botoncito de Primavera 2017</h2>
 					<h4 class="h-light"> <i>Elección 2017</i></h4> -->
-					<h3 font color"White" class="h-ultra"><i>Niña Primavera y Botoncito de Primavera</i></h3>
-					<h3 class="h-light"> <i>Elección 2017</i></h3>
+					<h4 font color"White" class="h-ultra"><i>Niña Primavera y Botoncito de Primavera</i></h4>
+					<h4 class="h-light"> <i>Elección 2017</i></h4>
 					<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
 					</div>
 					</div>
