@@ -124,9 +124,14 @@ else
 				<div class="row">
 					<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
 						<div class="section-heading text-center">
+<<<<<<< HEAD
 					<h2 font color"White" class="h-ultra">Elección Niña Primavera y Niña Botoncito de Primavera 2017</h2>
 
 					<h4 class="h-light"> <i>Elección 2017</i></h4>
+=======
+					<h2 font color"White" class="h-ultra">Niña Primavera y Botoncito de Primavera 2017 </h2>
+					<h4 class="h-light"> <i>Eleccion 2017</i></h4>
+>>>>>>> refs/remotes/origin/master
 					<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
 					</div>
 					</div>
@@ -185,7 +190,7 @@ while($dato = mysqli_fetch_array($record)) {
     echo"<li class='cbp-item neurologist'>";
     echo"<a href='index-form.php?id=".$user."&ref=".$dato['idcandidatas']."'class='cbp-caption'>";
     echo"<div class='cbp-caption-defaultWrap'>";
-    echo "<img src='img/team/".$dato["idcandidatas"].".jpg' class='img-responsive' alt='img'>";
+    echo "<img src='img/team/".$dato["idcandidatas"].".JPG 	' class='img-responsive' alt='img'>";
     echo"</div>";
     echo"<div class='cbp-caption-activeWrap'>";
     echo"<div class='cbp-l-caption-alignCenter'>";
@@ -234,12 +239,33 @@ while($dato = mysqli_fetch_array($record)) {
                 <div class="col-sm-12 col-md-12 col-lg-12" >
 					<div class="wow bounceInUp" data-wow-delay="0.2s">
                     <div id="owl-works" class="owl-carousel">
-                        <div class="item"><a href="img/photo/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"><img src="img/photo/1.jpg" class="img-responsive" alt="img"></a></div>
-                        <div class="item"><a href="img/photo/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/2.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="img/photo/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/3@2x.jpg"><img src="img/photo/3.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="img/photo/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/4@2x.jpg"><img src="img/photo/4.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="img/photo/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/5@2x.jpg"><img src="img/photo/5.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="img/photo/6.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/6@2x.jpg"><img src="img/photo/6.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/1.JPG" title="Candidatas" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/1.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/2.JPG" title="Candidatas" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/2.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/5.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/5.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/6.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/6.JPG" class="img-responsive " alt="img"></a></div>
+                    	<div class="item"><a href="img/photo/7.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/7.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/8.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/8.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/9.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/9.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/10.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/10.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/11.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/11.JPG" class="img-responsive " alt="img"></a></div>
+                    	<div class="item"><a href="img/photo/12.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/12.JPG" class="img-responsive" alt="img"></a></div>
+                        <div class="item"><a href="img/photo/13.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/13.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/14.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/14.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/15.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/15.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/16.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/16.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/17.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/17.JPG" class="img-responsive " alt="img"></a></div>
+                    	<div class="item"><a href="img/photo/18.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/18.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/19.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/19.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/20.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/20@2x.jpg"><img src="img/photo/20.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/21.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/21.JPG" class="img-responsive" alt="img"></a></div>
+                        <div class="item"><a href="img/photo/22.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/22.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/23.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/23.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/24.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/24.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/25.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/25.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/26.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/26.JPG" class="img-responsive " alt="img"></a></div>
+                    	<div class="item"><a href="img/photo/27.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/27.JPG" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/photo/28.JPG" title="Candidata" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/28.JPG" class="img-responsive " alt="img"></a></div>
+
                     </div>
 					</div>
                 </div>
