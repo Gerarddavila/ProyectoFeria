@@ -88,9 +88,18 @@ h6 {
 	font-size: 20px;
 }
 
+h3 {margin: 0 0 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	color: #FFF;
+	line-height: 0.7em;
+	text-shadow:
+	-2px -2px 0 #0909F9,
+    2px -2px 0 #0909F9,
+   -2px 2px 0 #0909F9,
+    2px 2px 0 #0909F9;	}
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -99,6 +108,8 @@ h6 {
     font-weight: 400;
 	color: #F30B0B;
 	line-height: 1em;
+	
+
 }
 
 h1.h-xlight,h2.h-xlight,h3.h-xlight ,h4.h-xlight ,h5.h-xlight ,h6.h-xlight  {
@@ -123,6 +134,7 @@ h1.h-bold,h2.h-bold,h3.h-bold ,h4.h-bold ,h5.h-bold ,h6.h-bold  {
 
 h1.h-ultra,h2.h-ultra,h3.h-ultra ,h4.h-ultra ,h5.h-ultra ,h6.h-ultra  {
 	font-weight: 900;
+
 }
 
 
