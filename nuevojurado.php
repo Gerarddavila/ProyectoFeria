@@ -142,7 +142,7 @@ else
     										</div>    									
     										    	 <button type="submit"  class="btn btn-success"><span class="glyphicon glyphicon-book"></span> Registrate</button>								
     									</form>
-    											<a href="principal.html" class="btn btn-skinC  btn-lg">Regresar</a> 
+    											<a href="principal.php" class="btn btn-skinC  btn-lg">Regresar</a> 
     											<!--  <a  class="btn btn-skin  btn-lg">INGRESAR</a>-->
 								</div>
 							</div>				
