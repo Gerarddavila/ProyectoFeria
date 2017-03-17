@@ -123,10 +123,10 @@ else
 			<div class="container">
 				<div class="row">
 					<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
-						<div class="section-heading text-center">
+						<div class="section-heading text-right">
 					<!-- <h2 font color"White" class="h-ultra">Elección Niña Primavera y Niña Botoncito de Primavera 2017</h2>
 					<h4 class="h-light"> <i>Elección 2017</i></h4> -->
-					<h2 font color"White" class="h-ultra">Niña Primavera y Botoncito de Primavera 2017 </h2>
+					<h2 font color"White" class="h-ultra">Niña Primavera y Botoncito de Primavera</h2>
 					<h4 class="h-light"> <i>Elección 2017</i></h4>
 					<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
 					</div>
