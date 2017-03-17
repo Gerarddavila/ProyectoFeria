@@ -124,7 +124,7 @@ else
 
 												  if ($_GET['ref'] == $candidata)
 												  {
-												  echo "<img src='img/team/".$candidata.".jpg' alt='230' width='370'>";
+												  echo "<img src='img/team/".$candidata.".JPG' alt='230' width='370'>";
 												  }
 
 												  }
@@ -175,14 +175,15 @@ else
     										<div>
     										<?php 
     										$candidata=$_GET['ref'];
+                                            $user=$_GET['id'];
 
-    											echo"<a  href='tipico.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje Típico</a>";
+    											echo"<a  href='tipico.php?id=".$user."&ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje Típico</a>";
     											
-    											echo"<a  href='coreografia.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Coreografia</a>";
+    											echo"<a  href='coreografia.php?id=".$user."&ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Coreografia</a>";
     											
-    											echo"<a  href='gala.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje de Gala</a>";
+    											echo"<a  href='gala.php?id=".$user."&ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Traje de Gala</a>";
 
-    											echo"<a  href='mensaje.php?ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Mensaje	</a>";
+    											echo"<a  href='mensaje.php?id=".$user."&ref=" .$candidata."' class='btn btn-skin btn-block btn-lg'>Mensaje	</a>";
 
 
     											 ?>
@@ -190,7 +191,9 @@ else
     										</div>    									
     										    									
     									</form>
-    											<a  href="principal.php" class="btn btn-skinC  btn-lg">Regresar</a> 
+                							<?php 
+                                            $user=$_GET['id'];
+											echo "<a  href='principal.php?id=".$user."'class='btn btn-skinC  btn-lg'>Regresar</a> "; ?>
 								</div>
 							</div>				
 						

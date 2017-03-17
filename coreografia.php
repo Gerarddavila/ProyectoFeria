@@ -127,7 +127,7 @@ else
 
 												  if ($_GET['ref'] == $candidata)
 												  {
-												  echo "<img src='img/team/".$candidata.".jpg' alt='230' width='360'>";
+												  echo "<img src='img/team/".$candidata.".JPG' alt='230' width='360'>";
 												  }
 
 												  }
@@ -223,8 +223,9 @@ else
     										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg" onclick="return confirm('¿Esta seguro que desea guardar la calificación?');">
     										 
     									</form>
-										<?php $candidata=$_GET['ref'];
-											echo "<a  href='index-form.php?ref=".$dato['idcandidatas']."'class='btn btn-skinC  btn-lg'>Regresar</a> "; ?>
+									<?php $user=$_GET['id'];
+											echo "<a  href='index-form.php?id=".$user."&ref=".$dato['idcandidatas']."'class='btn btn-skinC  btn-lg'>Regresar</a> "; ?> 
+											
 											
 								</div>
 												
