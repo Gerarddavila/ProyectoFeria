@@ -54,7 +54,7 @@ $_SESSION['valido']=0
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand" target="_blank" href="https://www.umg.edu.gt/">
                     <img src="img/logo.png" alt="" width="150" height="40" />
                 </a>
             </div>
@@ -139,7 +139,7 @@ $_SESSION['valido']=0
 					<div class="widget">
 						<h5>Siguenos</h5>
 						<ul class="company-social">
-								<li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="social-facebook"><a target="_blank" href="https://web.facebook.com/reinadeparatmental.sanmarcos?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
 	
 						</ul>
 					</div>
@@ -167,7 +167,7 @@ $_SESSION['valido']=0
                                 Licensing information: https://bootstrapmade.com/license/
                                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
                             -->
-                            <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Realiza tu Proyecto con Nosotros</a> 
+                            <a >Feria de Primavera</a> 
                         </div>
 					</div>
 					</div>
