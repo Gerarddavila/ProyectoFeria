@@ -67,8 +67,8 @@ $user=$_GET['id'];?>
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
 				<li class="active"><a href="#intro">Inicio</a></li>
-				<li><a href="#doctor">Candidatas</a></li>
-				<li><a href="#facilities">Galería</a></li>
+				<!-- <li><a href="#doctor">Candidatas</a></li> -->
+				<!-- <li><a href="#facilities">Galería</a></li> -->
 				<li class="dropdown">
                     
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo " ".$_SESSION['usuario'];?> <b class="caret"></b></a>
@@ -81,7 +81,7 @@ $user=$_GET['id'];?>
                           <!-- <a href="#"><i class="fa fa-fw fa-gear"></i> Configuracion</a> --> 
                         </li>
 		                <li>
-                         <!-- <a href="nuevojurado.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a> -->
+                         <a ><i class="fa fa-fw fa-gear"></i>Reportes</a>
                        </li> 
                     	<li class="divider"></li>
                         <li>
@@ -126,8 +126,8 @@ else
 						<div class="section-heading text-right">
 					<!-- <h2 font color"White" class="h-ultra">Elección Niña Primavera y Niña Botoncito de Primavera 2017</h2>
 					<h4 class="h-light"> <i>Elección 2017</i></h4> -->
-					<h4 font color"White" class="h-ultra"><i>Niña Primavera y Botoncito de Primavera</i></h4>
-					<h4 class="h-light"> <i>Elección 2017</i></h4>
+					<!-- <h4 font color"White" class="h-ultra"><i>Niña Primavera y Botoncito de Primavera</i></h4> -->
+					<!-- <h4 class="h-light"> <i>Elección 2017</i></h4> -->
 					<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
 					</div>
 					</div>
@@ -148,7 +148,7 @@ else
 	
 
 	<!-- Section: team -->
-    <section id="doctor" class="home-section bg-gray paddingbot-60">
+    <!--  <section id="doctor" class="home-section bg-gray paddingbot-60">
 		<div class="container marginbot-50">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
@@ -170,8 +170,8 @@ else
             
 		
             <div id="grid-container" class="cbp-l-grid-team">
-                <ul>
-<?php
+                <ul>-->
+<!--    <?php/*
 $user=$_GET['id'];
 $con = mysqli_connect('localhost', 'comision_admin', '$Sanmarcos2017', 'comision_belleza2017');
 
@@ -198,7 +198,7 @@ while($dato = mysqli_fetch_array($record)) {
     echo"<div class='cbp-l-grid-team-position'>".$dato['municipio']."</div>";
     echo"</li>";
 
-}
+}*/
 ?>
                     
     </ul>		
@@ -208,11 +208,12 @@ while($dato = mysqli_fetch_array($record)) {
 		</div>
 
 	</section>
-	<!-- /Section: team -->
+	 /Section: team -->
 
 	
 		
 	<!-- Section: works -->
+	<!--  
     <section id="facilities" class="home-section paddingbot-60">
 		<div class="container marginbot-50">
 			<div class="row">
@@ -266,7 +267,7 @@ while($dato = mysqli_fetch_array($record)) {
             </div>
 		</div>
 	</section>
-	<!-- /Section: works -->
+	 /Section: works -->
 	
 	
 
