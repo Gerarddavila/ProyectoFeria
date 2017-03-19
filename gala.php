@@ -172,7 +172,7 @@ else
 									    <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
                                         <div id="errormessage"></div>
                                    
-    					                <form action="" method="post" role="form" class="contactForm lead">
+    					                <form action=<?php $user=$_GET['id']; echo "'ingala.php?id=".$user."&ref=".$dato['idcandidatas']."'"; ?>  method="post" role="form" class="contactForm lead">
     										
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">

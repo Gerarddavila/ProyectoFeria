@@ -137,7 +137,7 @@ else
 
 				                        <?php 
 				                        $candidata=$_GET['ref'];
-				                                  $con = mysqli_connect('localhost', 'comision_admin', '$Sanmarcos2017', 'comision_belleza2017');
+				                                  $con = mysqli_connect('localhost', 'comision_admin', '$SanMarcos2017', 'comision_belleza2017');
 
 												$query = "select idcandidatas,nombrec,municipio from candidatas where idcandidatas=".$candidata.";";
 
@@ -174,8 +174,8 @@ else
 									    <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
                                         <div id="errormessage"></div>
                                    
-    					                <form action="" method="post" role="form" class="contactForm lead">
-    										
+    					              <form action=<?php $candidata=$_GET['ref']; $user=$_GET['id']; echo "'incoreo.php?id=".$user."&ref=".$candidata."'"; ?>  method="post" role="form" class="contactForm lead">
+
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
     													<label>Dominio</label>     												
@@ -223,6 +223,8 @@ else
     										<input type="submit" value="Aceptar" class="btn btn-skin btn-block btn-lg" onclick="return confirm('¿Esta seguro que desea guardar la calificación?');">
     										 
     									</form>
+
+
 									<?php $user=$_GET['id'];
 											echo "<a  href='index-form.php?id=".$user."&ref=".$dato['idcandidatas']."'class='btn btn-skinC  btn-lg'>Regresar</a> "; ?> 
 											
