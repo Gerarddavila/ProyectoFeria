@@ -83,7 +83,7 @@ $user=$_GET['id'];?>
 		                <li>
                          <!-- <a href="nuevojurado.php"><i class="fa fa-fw fa-gear"></i> Nuevo Jurado</a> -->
                        </li> 
-                    	<li class="divider"></li>
+                    	<!-- <li class="divider"></li> -->
                         <li>
                             <a href="index.php"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesion</a>
                         </li>
