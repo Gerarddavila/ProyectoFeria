@@ -133,8 +133,8 @@ else
                                				 	</div>
                                				 	<a> Tipo de Usuario </a>
     											<div class="form-group">
-    												<input class="form.control" name="rbutton" type="radio" value="1">  Juez <br>
-    												<input class="form.control" name="rbutton" type="radio" value="0">  Fiscal <br>
+    												<input class="form.control" name="rbutton" type="radio" value="2">  Jurado <br>
+    												<input class="form.control" name="rbutton" type="radio" value="3">  Juez <br>
 
     											</div>
 

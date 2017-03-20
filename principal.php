@@ -123,21 +123,19 @@ else
 			<div class="container">
 				<div class="row">
 					<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
-						<div class="section-heading text-center">
+						<div class="section-heading text-right">
 					<!-- <h2 font color"White" class="h-ultra">Elección Niña Primavera y Niña Botoncito de Primavera 2017</h2>
 					<h4 class="h-light"> <i>Elección 2017</i></h4> -->
-					<h2 font color"White" class="h-ultra">Niña Primavera y Botoncito de Primavera 2017 </h2>
+					<h4 font color"White" class="h-ultra"><i>Niña Primavera y Botoncito de Primavera</i></h4>
 					<h4 class="h-light"> <i>Elección 2017</i></h4>
 					<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
 					</div>
 					</div>
 					<div class="col-lg-4">
 					<div class="col-lg-4">
-
 					</div>
 					</div>
-					<p></p>
-					<div class="col-lg-6.5">
+					<div class="col-lg-6.0">
 						<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div align= "absbottom right"><img src="img/dummy/img-1.png" class="img-responsive" alt="" />
 						</div>
