@@ -138,7 +138,6 @@ else
 
     											</div>
 
-
     										</div>    									
     										    	 <button type="submit"  class="btn btn-success"><span class="glyphicon glyphicon-book"></span> Registrate</button>								
     									</form>
